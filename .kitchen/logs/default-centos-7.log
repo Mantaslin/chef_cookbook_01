@@ -1,603 +1,125 @@
-I, [2022-08-28T17:23:51.732157 #32839]  INFO -- default-centos-7: -----> Converging <default-centos-7>...
-I, [2022-08-28T17:23:51.806308 #32839]  INFO -- default-centos-7: Preparing files for transfer
-I, [2022-08-28T17:23:51.806423 #32839]  INFO -- default-centos-7: Preparing dna.json
-I, [2022-08-28T17:23:51.806586 #32839]  INFO -- default-centos-7: Preparing cookbooks from project directory
-I, [2022-08-28T17:23:51.811982 #32839]  INFO -- default-centos-7: Removing non-cookbook files before transfer
-I, [2022-08-28T17:23:51.815243 #32839]  INFO -- default-centos-7: Preparing validation.pem
-I, [2022-08-28T17:23:51.815406 #32839]  INFO -- default-centos-7: Preparing client.rb
-I, [2022-08-28T17:23:52.098451 #32839]  INFO -- default-centos-7: el 7 x86_64
-I, [2022-08-28T17:23:52.098513 #32839]  INFO -- default-centos-7: Getting information for chef stable latest for el...
-I, [2022-08-28T17:23:52.098531 #32839]  INFO -- default-centos-7: downloading https://omnitruck.chef.io/stable/chef/metadata?v=latest&p=el&pv=7&m=x86_64
-I, [2022-08-28T17:23:52.098545 #32839]  INFO -- default-centos-7:   to file /tmp/kitchen/metadata.txt
-I, [2022-08-28T17:23:52.099461 #32839]  INFO -- default-centos-7: trying curl...
-I, [2022-08-28T17:23:53.763615 #32839]  INFO -- default-centos-7: sha1	8a598cce806d6a1b7f1c911e2f1f111498fd748a
-I, [2022-08-28T17:23:53.763796 #32839]  INFO -- default-centos-7: sha256	037bfdcab5000a1fbaa9c11dda8a22bf536230cc84398e4c606e77b8136e63ad
-I, [2022-08-28T17:23:53.763870 #32839]  INFO -- default-centos-7: url	https://packages.chef.io/files/stable/chef/17.10.3/el/7/chef-17.10.3-1.el7.x86_64.rpm
-I, [2022-08-28T17:23:53.764459 #32839]  INFO -- default-centos-7: version	17.10.3
-I, [2022-08-28T17:23:53.772545 #32839]  INFO -- default-centos-7: downloaded metadata file looks valid...
-I, [2022-08-28T17:23:53.799644 #32839]  INFO -- default-centos-7: /tmp/omnibus/cache/chef-17.10.3-1.el7.x86_64.rpm exists
-I, [2022-08-28T17:23:53.799709 #32839]  INFO -- default-centos-7: Comparing checksum with sha256sum...
-I, [2022-08-28T17:23:53.913945 #32839]  INFO -- default-centos-7: Installing chef latest
-I, [2022-08-28T17:23:53.913995 #32839]  INFO -- default-centos-7: installing with rpm...
-I, [2022-08-28T17:23:53.973201 #32839]  INFO -- default-centos-7: warning: /tmp/omnibus/cache/chef-17.10.3-1.el7.x86_64.rpm: Header V4 DSA/SHA1 Signature, key ID 83ef826a: NOKEY
-I, [2022-08-28T17:23:54.272430 #32839]  INFO -- default-centos-7: Preparing...                                                            (100%)#                                 (100%)##                                (100%)###                               (100%)####                              (100%)#####                             (100%)######                            (100%)#######                           (100%)########                          (100%)#########                         (100%)##########                        (100%)###########                       (100%)############                      (100%)#############                     (100%)##############                    (100%)###############                   (100%)################                  (100%)#################                 (100%)##################                (100%)###################               (100%)####################              (100%)#####################             (100%)######################            (100%)#######################           (100%)########################          (100%)#########################         (100%)##########################        (100%)###########################       (100%)############################      (100%)#############################     (100%)##############################    (100%)###############################   (100%)################################  (100%)################################# (100%)################################# [100%]
-I, [2022-08-28T17:23:54.296761 #32839]  INFO -- default-centos-7: Updating / installing...
-I, [2022-08-28T17:23:58.167187 #32839]  INFO -- default-centos-7:    1:chef-17.10.3-1.el7                                                 (  2%)#                                 (  4%)##                                (  7%)###                               ( 10%)####                              ( 13%)#####                             ( 16%)######                            ( 19%)#######                           ( 22%)########                          ( 25%)#########                         ( 28%)##########                        ( 31%)###########                       ( 34%)############                      ( 37%)#############                     ( 40%)##############                    ( 43%)###############                   ( 46%)################                  ( 49%)#################                 ( 51%)##################                ( 54%)###################               ( 57%)####################              ( 60%)#####################             ( 63%)######################            ( 66%)#######################           ( 69%)########################          ( 72%)#########################         ( 75%)##########################        ( 78%)###########################       ( 81%)############################      ( 84%)#############################     ( 87%)##############################    ( 90%)###############################   ( 93%)################################  ( 96%)################################# ( 99%)################################# [100%]
-I, [2022-08-28T17:23:58.455510 #32839]  INFO -- default-centos-7: Thank you for installing Chef Infra Client! For help getting started visit https://learn.chef.io
-I, [2022-08-28T17:23:58.510153 #32839]  INFO -- default-centos-7: Transferring files to <default-centos-7>
-I, [2022-08-28T17:24:00.880894 #32839]  INFO -- default-centos-7: +---------------------------------------------+
-I, [2022-08-28T17:24:00.880999 #32839]  INFO -- default-centos-7: [32m✔[0m 2 product licenses accepted.
-I, [2022-08-28T17:24:00.881038 #32839]  INFO -- default-centos-7: +---------------------------------------------+
-I, [2022-08-28T17:24:01.196914 #32839]  INFO -- default-centos-7: Chef Infra Client, version 17.10.3
-I, [2022-08-28T17:24:01.196996 #32839]  INFO -- default-centos-7: Patents: https://www.chef.io/patents
-I, [2022-08-28T17:24:01.197034 #32839]  INFO -- default-centos-7: Infra Phase starting
-I, [2022-08-28T17:24:03.433814 #32839]  INFO -- default-centos-7: Creating a new client identity for default-centos-7 using the validator key.
-I, [2022-08-28T17:24:03.702799 #32839]  INFO -- default-centos-7: Resolving cookbooks for run list: ["sre_homework::default"]
-I, [2022-08-28T17:24:03.904195 #32839]  INFO -- default-centos-7: Synchronizing cookbooks:
-I, [2022-08-28T17:24:04.008657 #32839]  INFO -- default-centos-7:   - docker (10.1.8)
-I, [2022-08-28T17:24:04.013066 #32839]  INFO -- default-centos-7:   - sre_homework (0.1.0)
-I, [2022-08-28T17:24:04.013203 #32839]  INFO -- default-centos-7:   - cadvisor (0.1.1)
-I, [2022-08-28T17:24:04.016407 #32839]  INFO -- default-centos-7: Installing cookbook gem dependencies:
-I, [2022-08-28T17:24:08.015145 #32839]  INFO -- default-centos-7: Compiling cookbooks...
-I, [2022-08-28T17:24:08.488049 #32839]  INFO -- default-centos-7: Loading Chef InSpec profile files:
-I, [2022-08-28T17:24:08.488131 #32839]  INFO -- default-centos-7: Loading Chef InSpec input files:
-I, [2022-08-28T17:24:08.488189 #32839]  INFO -- default-centos-7: Loading Chef InSpec waiver files:
-I, [2022-08-28T17:24:08.583101 #32839]  INFO -- default-centos-7: Converging 15 resources
-I, [2022-08-28T17:24:08.583189 #32839]  INFO -- default-centos-7: Recipe: sre_homework::default
-I, [2022-08-28T17:24:08.601405 #32839]  INFO -- default-centos-7:   * template[/etc/selinux/config] action create
-I, [2022-08-28T17:24:08.605010 #32839]  INFO -- default-centos-7:     - update content in file /etc/selinux/config from a1750b to ae4ee0
-I, [2022-08-28T17:24:08.605096 #32839]  INFO -- default-centos-7:     --- /etc/selinux/config	2022-06-03 15:21:30.644191000 +0000
-I, [2022-08-28T17:24:08.605121 #32839]  INFO -- default-centos-7:     +++ /etc/selinux/.chef-config20220828-2970-2gasi1	2022-08-28 14:24:08.586226595 +0000
-I, [2022-08-28T17:24:08.605137 #32839]  INFO -- default-centos-7:     @@ -1,15 +1,16 @@
-I, [2022-08-28T17:24:08.605152 #32839]  INFO -- default-centos-7:     +# Generated by Chef for vm01
-I, [2022-08-28T17:24:08.605166 #32839]  INFO -- default-centos-7:     + # Do NOT modify this file by hand.
-I, [2022-08-28T17:24:08.605182 #32839]  INFO -- default-centos-7:     + #
-I, [2022-08-28T17:24:08.605210 #32839]  INFO -- default-centos-7:      
-I, [2022-08-28T17:24:08.605225 #32839]  INFO -- default-centos-7:     -# This file controls the state of SELinux on the system.
-I, [2022-08-28T17:24:08.605242 #32839]  INFO -- default-centos-7:     -# SELINUX= can take one of these three values:
-I, [2022-08-28T17:24:08.605256 #32839]  INFO -- default-centos-7:     -#     enforcing - SELinux security policy is enforced.
-I, [2022-08-28T17:24:08.605273 #32839]  INFO -- default-centos-7:     -#     permissive - SELinux prints warnings instead of enforcing.
-I, [2022-08-28T17:24:08.605288 #32839]  INFO -- default-centos-7:     -#     disabled - No SELinux policy is loaded.
-I, [2022-08-28T17:24:08.605303 #32839]  INFO -- default-centos-7:     + # This file controls the state of SELinux on the system.
-I, [2022-08-28T17:24:08.605318 #32839]  INFO -- default-centos-7:     + # SELINUX= can take one of these three values:
-I, [2022-08-28T17:24:08.605332 #32839]  INFO -- default-centos-7:     + #     enforcing - SELinux security policy is enforced.
-I, [2022-08-28T17:24:08.605362 #32839]  INFO -- default-centos-7:     + #     permissive - SELinux prints warnings instead of enforcing.
-I, [2022-08-28T17:24:08.605380 #32839]  INFO -- default-centos-7:     + #     disabled - No SELinux policy is loaded.
-I, [2022-08-28T17:24:08.605394 #32839]  INFO -- default-centos-7:      SELINUX=permissive
-I, [2022-08-28T17:24:08.605410 #32839]  INFO -- default-centos-7:     -# SELINUXTYPE= can take one of three values:
-I, [2022-08-28T17:24:08.605426 #32839]  INFO -- default-centos-7:     -#     targeted - Targeted processes are protected,
-I, [2022-08-28T17:24:08.605441 #32839]  INFO -- default-centos-7:     -#     minimum - Modification of targeted policy. Only selected processes are protected. 
-I, [2022-08-28T17:24:08.605455 #32839]  INFO -- default-centos-7:     -#     mls - Multi Level Security protection.
-I, [2022-08-28T17:24:08.605471 #32839]  INFO -- default-centos-7:     + # SELINUXTYPE= can take one of these three values:
-I, [2022-08-28T17:24:08.605488 #32839]  INFO -- default-centos-7:     + #     targeted - Targeted processes are protected,
-I, [2022-08-28T17:24:08.605529 #32839]  INFO -- default-centos-7:     + #     minimum - Modification of targeted policy. Only selected processes are protected.
-I, [2022-08-28T17:24:08.605570 #32839]  INFO -- default-centos-7:     + #     mls - Multi Level Security protection.
-I, [2022-08-28T17:24:08.605610 #32839]  INFO -- default-centos-7:      SELINUXTYPE=targeted
-I, [2022-08-28T17:24:08.605645 #32839]  INFO -- default-centos-7:     -
-I, [2022-08-28T17:24:08.655537 #32839]  INFO -- default-centos-7:     -
-I, [2022-08-28T17:24:08.655604 #32839]  INFO -- default-centos-7:     - restore selinux security context
-I, [2022-08-28T17:24:08.655626 #32839]  INFO -- default-centos-7:   * directory[prometheus] action create
-I, [2022-08-28T17:24:08.657540 #32839]  INFO -- default-centos-7:     - create new directory /etc/prometheus/
-I, [2022-08-28T17:24:08.657593 #32839]  INFO -- default-centos-7:     - change mode from '' to '0755'
-I, [2022-08-28T17:24:08.657614 #32839]  INFO -- default-centos-7:     - change owner from '' to 'root'
-I, [2022-08-28T17:24:08.689344 #32839]  INFO -- default-centos-7:     - change group from '' to 'root'
-I, [2022-08-28T17:24:08.689458 #32839]  INFO -- default-centos-7:     - restore selinux security context
-I, [2022-08-28T17:24:08.698710 #32839]  INFO -- default-centos-7:   * template[/etc/prometheus/prometheus.yml] action create
-I, [2022-08-28T17:24:08.698770 #32839]  INFO -- default-centos-7:     - create new file /etc/prometheus/prometheus.yml
-I, [2022-08-28T17:24:08.698792 #32839]  INFO -- default-centos-7:     - update content in file /etc/prometheus/prometheus.yml from none to d2f05c
-I, [2022-08-28T17:24:08.698809 #32839]  INFO -- default-centos-7:     --- /etc/prometheus/prometheus.yml	2022-08-28 14:24:08.693226754 +0000
-I, [2022-08-28T17:24:08.698859 #32839]  INFO -- default-centos-7:     +++ /etc/prometheus/.chef-prometheus20220828-2970-ylszml.yml	2022-08-28 14:24:08.693226754 +0000
-I, [2022-08-28T17:24:08.698907 #32839]  INFO -- default-centos-7:     @@ -1,14 +1,28 @@
-I, [2022-08-28T17:24:08.698948 #32839]  INFO -- default-centos-7:     +---
-I, [2022-08-28T17:24:08.698989 #32839]  INFO -- default-centos-7:     +scrape_configs:
-I, [2022-08-28T17:24:08.699022 #32839]  INFO -- default-centos-7:     +- job_name: cadvisor
-I, [2022-08-28T17:24:08.699053 #32839]  INFO -- default-centos-7:     +  scrape_interval: 5s
-I, [2022-08-28T17:24:08.699093 #32839]  INFO -- default-centos-7:     +  static_configs:
-I, [2022-08-28T17:24:08.699129 #32839]  INFO -- default-centos-7:     +  - targets:
-I, [2022-08-28T17:24:08.699150 #32839]  INFO -- default-centos-7:     +    - 10.0.2.15:8080
-I, [2022-08-28T17:24:08.699168 #32839]  INFO -- default-centos-7:     +
-I, [2022-08-28T17:24:08.699184 #32839]  INFO -- default-centos-7:     +- job_name: node-exporter
-I, [2022-08-28T17:24:08.699368 #32839]  INFO -- default-centos-7:     +  scrape_interval: 5s
-I, [2022-08-28T17:24:08.699402 #32839]  INFO -- default-centos-7:     +  static_configs:
-I, [2022-08-28T17:24:08.699440 #32839]  INFO -- default-centos-7:     +  - targets:
-I, [2022-08-28T17:24:08.699483 #32839]  INFO -- default-centos-7:     +    - 10.0.2.15:9100
-I, [2022-08-28T17:24:08.699527 #32839]  INFO -- default-centos-7:     +
-I, [2022-08-28T17:24:08.699567 #32839]  INFO -- default-centos-7:     - change mode from '' to '0644'
-I, [2022-08-28T17:24:08.699607 #32839]  INFO -- default-centos-7:     - change owner from '' to 'root'
-I, [2022-08-28T17:24:08.732674 #32839]  INFO -- default-centos-7:     - change group from '' to 'root'
-I, [2022-08-28T17:24:08.732755 #32839]  INFO -- default-centos-7:     - restore selinux security context
-I, [2022-08-28T17:24:08.732783 #32839]  INFO -- default-centos-7:   * directory[grafana] action create
-I, [2022-08-28T17:24:08.732805 #32839]  INFO -- default-centos-7:     - create new directory /etc/grafana/provisioning/datasources/
-I, [2022-08-28T17:24:08.732828 #32839]  INFO -- default-centos-7:     - change mode from '' to '0755'
-I, [2022-08-28T17:24:08.732849 #32839]  INFO -- default-centos-7:     - change owner from '' to 'root'
-I, [2022-08-28T17:24:08.768571 #32839]  INFO -- default-centos-7:     - change group from '' to 'root'
-I, [2022-08-28T17:24:08.768673 #32839]  INFO -- default-centos-7:     - restore selinux security context
-I, [2022-08-28T17:24:08.786546 #32839]  INFO -- default-centos-7:   * template[/etc/grafana/provisioning/datasources/automatic.yml] action create
-I, [2022-08-28T17:24:08.786642 #32839]  INFO -- default-centos-7:     - create new file /etc/grafana/provisioning/datasources/automatic.yml
-I, [2022-08-28T17:24:08.786694 #32839]  INFO -- default-centos-7:     - update content in file /etc/grafana/provisioning/datasources/automatic.yml from none to d4e2fe
-I, [2022-08-28T17:24:08.786745 #32839]  INFO -- default-centos-7:     --- /etc/grafana/provisioning/datasources/automatic.yml	2022-08-28 14:24:08.772226869 +0000
-I, [2022-08-28T17:24:08.786791 #32839]  INFO -- default-centos-7:     +++ /etc/grafana/provisioning/datasources/.chef-automatic20220828-2970-5ix88s.yml	2022-08-28 14:24:08.772226869 +0000
-I, [2022-08-28T17:24:08.786851 #32839]  INFO -- default-centos-7:     @@ -1,28 +1,56 @@
-I, [2022-08-28T17:24:08.786900 #32839]  INFO -- default-centos-7:     +apiVersion: 1
-I, [2022-08-28T17:24:08.786945 #32839]  INFO -- default-centos-7:     +
-I, [2022-08-28T17:24:08.786987 #32839]  INFO -- default-centos-7:     +deleteDatasources:
-I, [2022-08-28T17:24:08.787031 #32839]  INFO -- default-centos-7:     +  - name: MYINFLUX
-I, [2022-08-28T17:24:08.787075 #32839]  INFO -- default-centos-7:     +    orgId: 1
-I, [2022-08-28T17:24:08.787120 #32839]  INFO -- default-centos-7:     +
-I, [2022-08-28T17:24:08.787162 #32839]  INFO -- default-centos-7:     +datasources:
-I, [2022-08-28T17:24:08.787208 #32839]  INFO -- default-centos-7:     +- name: PROMETHEUS
-I, [2022-08-28T17:24:08.787251 #32839]  INFO -- default-centos-7:     +  type: prometheus
-I, [2022-08-28T17:24:08.787296 #32839]  INFO -- default-centos-7:     +  access: proxy
-I, [2022-08-28T17:24:08.787344 #32839]  INFO -- default-centos-7:     +  url: http://10.0.2.15:9090
-I, [2022-08-28T17:24:08.787392 #32839]  INFO -- default-centos-7:     +  password:
-I, [2022-08-28T17:24:08.787438 #32839]  INFO -- default-centos-7:     +  user:
-I, [2022-08-28T17:24:08.787479 #32839]  INFO -- default-centos-7:     +  database:
-I, [2022-08-28T17:24:08.787521 #32839]  INFO -- default-centos-7:     +  basicAuth: false
-I, [2022-08-28T17:24:08.787564 #32839]  INFO -- default-centos-7:     +  basicAuthUser:
-I, [2022-08-28T17:24:08.787606 #32839]  INFO -- default-centos-7:     +  basicAuthPassword:
-I, [2022-08-28T17:24:08.787650 #32839]  INFO -- default-centos-7:     +  withCredentials:
-I, [2022-08-28T17:24:08.787692 #32839]  INFO -- default-centos-7:     +  isDefault: true
-I, [2022-08-28T17:24:08.787734 #32839]  INFO -- default-centos-7:     +  jsonData:
-I, [2022-08-28T17:24:08.787777 #32839]  INFO -- default-centos-7:     +     tlsAuth: false
-I, [2022-08-28T17:24:08.787841 #32839]  INFO -- default-centos-7:     +     tlsAuthWithCACert: false
-I, [2022-08-28T17:24:08.787883 #32839]  INFO -- default-centos-7:     +  secureJsonData:
-I, [2022-08-28T17:24:08.787925 #32839]  INFO -- default-centos-7:     +    tlsCACert: ""
-I, [2022-08-28T17:24:08.787972 #32839]  INFO -- default-centos-7:     +    tlsClientCert: ""
-I, [2022-08-28T17:24:08.788017 #32839]  INFO -- default-centos-7:     +    tlsClientKey: ""
-I, [2022-08-28T17:24:08.788060 #32839]  INFO -- default-centos-7:     +  version: 1
-I, [2022-08-28T17:24:08.790104 #32839]  INFO -- default-centos-7:     +  editable: true
-I, [2022-08-28T17:24:08.790144 #32839]  INFO -- default-centos-7:     - change mode from '' to '0644'
-I, [2022-08-28T17:24:08.790165 #32839]  INFO -- default-centos-7:     - change owner from '' to 'root'
-I, [2022-08-28T17:24:08.812995 #32839]  INFO -- default-centos-7:     - change group from '' to 'root'
-I, [2022-08-28T17:24:08.813089 #32839]  INFO -- default-centos-7:     - restore selinux security context
-I, [2022-08-28T17:24:08.850664 #32839]  INFO -- default-centos-7:   * execute[selinux set runtime status] action run
-I, [2022-08-28T17:24:08.850778 #32839]  INFO -- default-centos-7:     - execute setenforce 0
-I, [2022-08-28T17:24:08.850848 #32839]  INFO -- default-centos-7: Recipe: docker::default
-I, [2022-08-28T17:24:08.859792 #32839]  INFO -- default-centos-7:   * docker_service[default] action create
-I, [2022-08-28T17:24:08.859882 #32839]  INFO -- default-centos-7:     * docker_installation_package[default] action create
-I, [2022-08-28T17:24:08.876021 #32839]  INFO -- default-centos-7:       * yum_repository[Docker] action create
-I, [2022-08-28T17:24:08.888614 #32839]  INFO -- default-centos-7:  * template[/etc/yum.repos.d/Docker.repo] action create
-I, [2022-08-28T17:24:08.888685 #32839]  INFO -- default-centos-7:    - create new file /etc/yum.repos.d/Docker.repo
-I, [2022-08-28T17:24:08.888713 #32839]  INFO -- default-centos-7:    - update content in file /etc/yum.repos.d/Docker.repo from none to 020022
-I, [2022-08-28T17:24:08.888736 #32839]  INFO -- default-centos-7:    --- /etc/yum.repos.d/Docker.repo	2022-08-28 14:24:08.881227030 +0000
-I, [2022-08-28T17:24:08.888757 #32839]  INFO -- default-centos-7:    +++ /etc/yum.repos.d/.chef-Docker20220828-2970-708o3e.repo	2022-08-28 14:24:08.881227030 +0000
-I, [2022-08-28T17:24:08.888777 #32839]  INFO -- default-centos-7:    @@ -1,10 +1,20 @@
-I, [2022-08-28T17:24:08.888799 #32839]  INFO -- default-centos-7:    +# This file was generated by Chef Infra
-I, [2022-08-28T17:24:08.888824 #32839]  INFO -- default-centos-7:    +# Do NOT modify this file by hand.
-I, [2022-08-28T17:24:08.888845 #32839]  INFO -- default-centos-7:    +
-I, [2022-08-28T17:24:08.888866 #32839]  INFO -- default-centos-7:    +[Docker]
-I, [2022-08-28T17:24:08.888888 #32839]  INFO -- default-centos-7:    +name=Docker Stable repository
-I, [2022-08-28T17:24:08.888909 #32839]  INFO -- default-centos-7:    +baseurl=https://download.docker.com/linux/centos/7/x86_64/stable
-I, [2022-08-28T17:24:08.888930 #32839]  INFO -- default-centos-7:    +enabled=1
-I, [2022-08-28T17:24:08.888951 #32839]  INFO -- default-centos-7:    +fastestmirror_enabled=0
-I, [2022-08-28T17:24:08.888972 #32839]  INFO -- default-centos-7:    +gpgcheck=1
-I, [2022-08-28T17:24:08.888991 #32839]  INFO -- default-centos-7:    +gpgkey=https://download.docker.com/linux/centos/gpg
-I, [2022-08-28T17:24:08.913744 #32839]  INFO -- default-centos-7:    - change mode from '' to '0644'
-I, [2022-08-28T17:24:08.913817 #32839]  INFO -- default-centos-7:    - restore selinux security context
-I, [2022-08-28T17:24:08.913871 #32839]  INFO -- default-centos-7:  * execute[yum clean metadata Docker] action nothing (skipped due to action :nothing)
-I, [2022-08-28T17:24:09.278134 #32839]  INFO -- default-centos-7:  * execute[yum clean metadata Docker] action run
-I, [2022-08-28T17:24:09.278200 #32839]  INFO -- default-centos-7:    - execute yum clean metadata --disablerepo=* --enablerepo=Docker
-I, [2022-08-28T17:24:09.278245 #32839]  INFO -- default-centos-7:  * execute[yum-makecache-Docker] action nothing (skipped due to action :nothing)
-I, [2022-08-28T17:24:10.402843 #32839]  INFO -- default-centos-7:  * execute[yum-makecache-Docker] action run
-I, [2022-08-28T17:24:10.402910 #32839]  INFO -- default-centos-7:    - execute yum -q -y makecache --disablerepo=* --enablerepo=Docker
-I, [2022-08-28T17:24:10.402935 #32839]  INFO -- default-centos-7:  * yum_package[package-cache-reload-Docker] action nothing (skipped due to action :nothing)
-I, [2022-08-28T17:24:11.785510 #32839]  INFO -- default-centos-7:  * yum_package[package-cache-reload-Docker] action flush_cache (up to date)
-I, [2022-08-28T17:24:11.955896 #32839]  INFO -- default-centos-7:       
-I, [2022-08-28T17:24:47.478627 #32839]  INFO -- default-centos-7:       * yum_package[docker-ce] action install
-I, [2022-08-28T17:24:47.478703 #32839]  INFO -- default-centos-7:  - install version 3:20.10.17-3.el7.x86_64 of package docker-ce
-I, [2022-08-28T17:24:47.611325 #32839]  INFO -- default-centos-7:     
-I, [2022-08-28T17:24:47.626664 #32839]  INFO -- default-centos-7:     * docker_service[default] action restart
-I, [2022-08-28T17:24:47.626727 #32839]  INFO -- default-centos-7:       * docker_service_manager_systemd[default] action restart
-I, [2022-08-28T17:24:47.654181 #32839]  INFO -- default-centos-7:  * service[docker] action disable (up to date)
-I, [2022-08-28T17:24:47.678173 #32839]  INFO -- default-centos-7:  * service[docker] action stop (up to date)
-I, [2022-08-28T17:24:47.688326 #32839]  INFO -- default-centos-7:  * systemd_unit[docker.socket] action disable (up to date)
-I, [2022-08-28T17:24:47.716784 #32839]  INFO -- default-centos-7:  * systemd_unit[docker.socket] action stop (up to date)
-I, [2022-08-28T17:24:48.323738 #32839]  INFO -- default-centos-7:  * directory[/usr/libexec/docker] action create (up to date)
-I, [2022-08-28T17:24:48.349096 #32839]  INFO -- default-centos-7:  * template[/usr/libexec/docker/docker-wait-ready] action create
-I, [2022-08-28T17:24:48.349238 #32839]  INFO -- default-centos-7:    - create new file /usr/libexec/docker/docker-wait-ready
-I, [2022-08-28T17:24:48.349294 #32839]  INFO -- default-centos-7:    - update content in file /usr/libexec/docker/docker-wait-ready from none to 64d78d
-I, [2022-08-28T17:24:48.349330 #32839]  INFO -- default-centos-7:    --- /usr/libexec/docker/docker-wait-ready	2022-08-28 14:24:48.343285280 +0000
-I, [2022-08-28T17:24:48.349362 #32839]  INFO -- default-centos-7:    +++ /usr/libexec/docker/.chef-docker-wait-ready20220828-2970-ay3f6d	2022-08-28 14:24:48.343285280 +0000
-I, [2022-08-28T17:24:48.349393 #32839]  INFO -- default-centos-7:    @@ -1,10 +1,20 @@
-I, [2022-08-28T17:24:48.349426 #32839]  INFO -- default-centos-7:    +#!/usr/bin/env bash
-I, [2022-08-28T17:24:48.349455 #32839]  INFO -- default-centos-7:    +i=0
-I, [2022-08-28T17:24:48.349487 #32839]  INFO -- default-centos-7:    +while [ $i -lt 40 ]; do
-I, [2022-08-28T17:24:48.349520 #32839]  INFO -- default-centos-7:    +  /usr/bin/docker  ps | head -n 1 | grep ^CONTAINER > /dev/null 2>&1
-I, [2022-08-28T17:24:48.349554 #32839]  INFO -- default-centos-7:    +  [ $? -eq 0 ] && break
-I, [2022-08-28T17:24:48.349584 #32839]  INFO -- default-centos-7:    +  ((i++))
-I, [2022-08-28T17:24:48.349616 #32839]  INFO -- default-centos-7:    +  sleep 0.5
-I, [2022-08-28T17:24:48.349646 #32839]  INFO -- default-centos-7:    +done
-I, [2022-08-28T17:24:48.349677 #32839]  INFO -- default-centos-7:    +[ $i -eq 40 ] && exit 1
-I, [2022-08-28T17:24:48.357048 #32839]  INFO -- default-centos-7:    +exit 0
-I, [2022-08-28T17:24:48.357329 #32839]  INFO -- default-centos-7:    - change mode from '' to '0755'
-I, [2022-08-28T17:24:48.357440 #32839]  INFO -- default-centos-7:    - change owner from '' to 'root'
-I, [2022-08-28T17:24:48.391327 #32839]  INFO -- default-centos-7:    - change group from '' to 'root'
-I, [2022-08-28T17:24:48.391443 #32839]  INFO -- default-centos-7:    - restore selinux security context
-I, [2022-08-28T17:24:48.391500 #32839]  INFO -- default-centos-7:  * template[/lib/systemd/system/docker.socket] action create (skipped due to not_if)
-I, [2022-08-28T17:24:48.398248 #32839]  INFO -- default-centos-7:  * directory[/etc/containerd] action create (up to date)
-I, [2022-08-28T17:24:48.439689 #32839]  INFO -- default-centos-7:  * file[/etc/containerd/config.toml] action create_if_missing (up to date)
-I, [2022-08-28T17:24:48.439761 #32839]  INFO -- default-centos-7:  * template[/etc/systemd/system/containerd.service] action create (skipped due to not_if)
-I, [2022-08-28T17:24:48.439790 #32839]  INFO -- default-centos-7:  * template[/lib/systemd/system/docker.service] action create (skipped due to not_if)
-I, [2022-08-28T17:24:48.453252 #32839]  INFO -- default-centos-7:  * template[/etc/systemd/system/docker.socket] action create
-I, [2022-08-28T17:24:48.453332 #32839]  INFO -- default-centos-7:    - create new file /etc/systemd/system/docker.socket
-I, [2022-08-28T17:24:48.453368 #32839]  INFO -- default-centos-7:    - update content in file /etc/systemd/system/docker.socket from none to a64128
-I, [2022-08-28T17:24:48.453436 #32839]  INFO -- default-centos-7:    --- /etc/systemd/system/docker.socket	2022-08-28 14:24:48.449285437 +0000
-I, [2022-08-28T17:24:48.453512 #32839]  INFO -- default-centos-7:    +++ /etc/systemd/system/.chef-docker20220828-2970-pk0z3.socket	2022-08-28 14:24:48.449285437 +0000
-I, [2022-08-28T17:24:48.453578 #32839]  INFO -- default-centos-7:    @@ -1,11 +1,22 @@
-I, [2022-08-28T17:24:48.453611 #32839]  INFO -- default-centos-7:    +[Unit]
-I, [2022-08-28T17:24:48.453641 #32839]  INFO -- default-centos-7:    +Description=Docker Socket for the API
-I, [2022-08-28T17:24:48.453668 #32839]  INFO -- default-centos-7:    +PartOf=docker.service
-I, [2022-08-28T17:24:48.453692 #32839]  INFO -- default-centos-7:    +
-I, [2022-08-28T17:24:48.453718 #32839]  INFO -- default-centos-7:    +[Socket]
-I, [2022-08-28T17:24:48.453754 #32839]  INFO -- default-centos-7:    +ListenStream=/var/run/docker.sock
-I, [2022-08-28T17:24:48.453786 #32839]  INFO -- default-centos-7:    +SocketGroup=docker
-I, [2022-08-28T17:24:48.453812 #32839]  INFO -- default-centos-7:    +
-I, [2022-08-28T17:24:48.453841 #32839]  INFO -- default-centos-7:    +
-I, [2022-08-28T17:24:48.453883 #32839]  INFO -- default-centos-7:    +[Install]
-I, [2022-08-28T17:24:48.457541 #32839]  INFO -- default-centos-7:    +WantedBy=sockets.target
-I, [2022-08-28T17:24:48.457621 #32839]  INFO -- default-centos-7:    - change mode from '' to '0644'
-I, [2022-08-28T17:24:48.457673 #32839]  INFO -- default-centos-7:    - change owner from '' to 'root'
-I, [2022-08-28T17:24:48.515991 #32839]  INFO -- default-centos-7:    - change group from '' to 'root'
-I, [2022-08-28T17:24:48.516064 #32839]  INFO -- default-centos-7:    - restore selinux security context
-I, [2022-08-28T17:24:48.543409 #32839]  INFO -- default-centos-7:  * template[/etc/systemd/system/docker.service] action create
-I, [2022-08-28T17:24:48.543513 #32839]  INFO -- default-centos-7:    - create new file /etc/systemd/system/docker.service
-I, [2022-08-28T17:24:48.543569 #32839]  INFO -- default-centos-7:    - update content in file /etc/systemd/system/docker.service from none to 01ee56
-I, [2022-08-28T17:24:48.543596 #32839]  INFO -- default-centos-7:    --- /etc/systemd/system/docker.service	2022-08-28 14:24:48.532285559 +0000
-I, [2022-08-28T17:24:48.543639 #32839]  INFO -- default-centos-7:    +++ /etc/systemd/system/.chef-docker20220828-2970-pmq4jm.service	2022-08-28 14:24:48.532285559 +0000
-I, [2022-08-28T17:24:48.543684 #32839]  INFO -- default-centos-7:    @@ -1,50 +1,100 @@
-I, [2022-08-28T17:24:48.543729 #32839]  INFO -- default-centos-7:    +[Unit]
-I, [2022-08-28T17:24:48.543775 #32839]  INFO -- default-centos-7:    +Description=Docker Application Container Engine
-I, [2022-08-28T17:24:48.543827 #32839]  INFO -- default-centos-7:    +Documentation=https://docs.docker.com
-I, [2022-08-28T17:24:48.543870 #32839]  INFO -- default-centos-7:    +BindsTo=containerd.service
-I, [2022-08-28T17:24:48.543915 #32839]  INFO -- default-centos-7:    +After=network-online.target docker.socket firewalld.service containerd.service
-I, [2022-08-28T17:24:48.543978 #32839]  INFO -- default-centos-7:    +Wants=network-online.target
-I, [2022-08-28T17:24:48.544023 #32839]  INFO -- default-centos-7:    +Requires=docker.socket
-I, [2022-08-28T17:24:48.544068 #32839]  INFO -- default-centos-7:    +
-I, [2022-08-28T17:24:48.544118 #32839]  INFO -- default-centos-7:    +[Service]
-I, [2022-08-28T17:24:48.544162 #32839]  INFO -- default-centos-7:    +Type=notify
-I, [2022-08-28T17:24:48.544207 #32839]  INFO -- default-centos-7:    +ExecStartPre=/sbin/sysctl -w net.ipv4.ip_forward=1
-I, [2022-08-28T17:24:48.544264 #32839]  INFO -- default-centos-7:    +ExecStartPre=/sbin/sysctl -w net.ipv6.conf.all.forwarding=1
-I, [2022-08-28T17:24:48.544322 #32839]  INFO -- default-centos-7:    +# the default is not to use systemd for cgroups because the delegate issues still
-I, [2022-08-28T17:24:48.544380 #32839]  INFO -- default-centos-7:    +# exists and systemd currently does not support the cgroup feature set required
-I, [2022-08-28T17:24:48.544761 #32839]  INFO -- default-centos-7:    +# for containers run by docker
-I, [2022-08-28T17:24:48.544813 #32839]  INFO -- default-centos-7:    +ExecStart=/usr/bin/dockerd  --group=docker --pidfile=/var/run/docker.pid --containerd=/run/containerd/containerd.sock
-I, [2022-08-28T17:24:48.544865 #32839]  INFO -- default-centos-7:    +ExecReload=/bin/kill -s HUP $MAINPID
-I, [2022-08-28T17:24:48.544911 #32839]  INFO -- default-centos-7:    +TimeoutSec=0
-I, [2022-08-28T17:24:48.544961 #32839]  INFO -- default-centos-7:    +RestartSec=2
-I, [2022-08-28T17:24:48.545014 #32839]  INFO -- default-centos-7:    +Restart=always
-I, [2022-08-28T17:24:48.545065 #32839]  INFO -- default-centos-7:    +
-I, [2022-08-28T17:24:48.545127 #32839]  INFO -- default-centos-7:    +
-I, [2022-08-28T17:24:48.545181 #32839]  INFO -- default-centos-7:    +# Note that StartLimit* options were moved from "Service" to "Unit" in systemd 229.
-I, [2022-08-28T17:24:48.545234 #32839]  INFO -- default-centos-7:    +# Both the old, and new location are accepted by systemd 229 and up, so using the old location
-I, [2022-08-28T17:24:48.545285 #32839]  INFO -- default-centos-7:    +# to make them work for either version of systemd.
-I, [2022-08-28T17:24:48.545335 #32839]  INFO -- default-centos-7:    +StartLimitBurst=3
-I, [2022-08-28T17:24:48.545384 #32839]  INFO -- default-centos-7:    +
-I, [2022-08-28T17:24:48.545434 #32839]  INFO -- default-centos-7:    +# Note that StartLimitInterval was renamed to StartLimitIntervalSec in systemd 230.
-I, [2022-08-28T17:24:48.545488 #32839]  INFO -- default-centos-7:    +# Both the old, and new name are accepted by systemd 230 and up, so using the old name to make
-I, [2022-08-28T17:24:48.545541 #32839]  INFO -- default-centos-7:    +# this option work for either version of systemd.
-I, [2022-08-28T17:24:48.545592 #32839]  INFO -- default-centos-7:    +StartLimitInterval=60s
-I, [2022-08-28T17:24:48.545642 #32839]  INFO -- default-centos-7:    +
-I, [2022-08-28T17:24:48.545694 #32839]  INFO -- default-centos-7:    +# Having non-zero Limit*s causes performance problems due to accounting overhead
-I, [2022-08-28T17:24:48.545746 #32839]  INFO -- default-centos-7:    +# in the kernel. We recommend using cgroups to do container-local accounting.
-I, [2022-08-28T17:24:48.545797 #32839]  INFO -- default-centos-7:    +LimitNOFILE=infinity
-I, [2022-08-28T17:24:48.545846 #32839]  INFO -- default-centos-7:    +LimitNPROC=infinity
-I, [2022-08-28T17:24:48.545896 #32839]  INFO -- default-centos-7:    +LimitCORE=infinity
-I, [2022-08-28T17:24:48.545946 #32839]  INFO -- default-centos-7:    +
-I, [2022-08-28T17:24:48.545999 #32839]  INFO -- default-centos-7:    +# Comment TasksMax if your systemd version does not support it.
-I, [2022-08-28T17:24:48.546051 #32839]  INFO -- default-centos-7:    +# Only systemd 226 and above support this option.
-I, [2022-08-28T17:24:48.546103 #32839]  INFO -- default-centos-7:    +TasksMax=infinity
-I, [2022-08-28T17:24:48.546163 #32839]  INFO -- default-centos-7:    +
-I, [2022-08-28T17:24:48.546230 #32839]  INFO -- default-centos-7:    +# set delegate yes so that systemd does not reset the cgroups of docker containers
-I, [2022-08-28T17:24:48.546296 #32839]  INFO -- default-centos-7:    +Delegate=yes
-I, [2022-08-28T17:24:48.546351 #32839]  INFO -- default-centos-7:    +
-I, [2022-08-28T17:24:48.546409 #32839]  INFO -- default-centos-7:    +# kill only the docker process, not all processes in the cgroup
-I, [2022-08-28T17:24:48.546467 #32839]  INFO -- default-centos-7:    +KillMode=process
-I, [2022-08-28T17:24:48.546525 #32839]  INFO -- default-centos-7:    +
-I, [2022-08-28T17:24:48.546584 #32839]  INFO -- default-centos-7:    +[Install]
-I, [2022-08-28T17:24:48.546639 #32839]  INFO -- default-centos-7:    +WantedBy=multi-user.target
-I, [2022-08-28T17:24:48.546699 #32839]  INFO -- default-centos-7:    - change mode from '' to '0644'
-I, [2022-08-28T17:24:48.546757 #32839]  INFO -- default-centos-7:    - change owner from '' to 'root'
-I, [2022-08-28T17:24:48.627200 #32839]  INFO -- default-centos-7:    - change group from '' to 'root'
-I, [2022-08-28T17:24:48.627451 #32839]  INFO -- default-centos-7:    - restore selinux security context
-I, [2022-08-28T17:24:48.736850 #32839]  INFO -- default-centos-7:  * execute[systemctl daemon-reload] action run
-I, [2022-08-28T17:24:48.736919 #32839]  INFO -- default-centos-7:    - execute /bin/systemctl daemon-reload
-I, [2022-08-28T17:24:48.760249 #32839]  INFO -- default-centos-7:  * execute[systemctl try-restart docker] action run
-I, [2022-08-28T17:24:48.760325 #32839]  INFO -- default-centos-7:    - execute /bin/systemctl try-restart docker
-I, [2022-08-28T17:24:48.760382 #32839]  INFO -- default-centos-7:  * execute[systemctl daemon-reload] action nothing (skipped due to action :nothing)
-I, [2022-08-28T17:24:48.760428 #32839]  INFO -- default-centos-7:  * execute[systemctl try-restart docker] action nothing (skipped due to action :nothing)
-I, [2022-08-28T17:24:48.869301 #32839]  INFO -- default-centos-7:  * service[docker] action enable
-I, [2022-08-28T17:24:48.869373 #32839]  INFO -- default-centos-7:    - enable service service[docker]
-I, [2022-08-28T17:24:49.913713 #32839]  INFO -- default-centos-7:  * service[docker] action start
-I, [2022-08-28T17:24:49.913780 #32839]  INFO -- default-centos-7:    - start service service[docker]
-I, [2022-08-28T17:24:49.913800 #32839]  INFO -- default-centos-7:       
-I, [2022-08-28T17:24:49.913815 #32839]  INFO -- default-centos-7:     
-I, [2022-08-28T17:24:49.913829 #32839]  INFO -- default-centos-7:   
-I, [2022-08-28T17:24:49.913842 #32839]  INFO -- default-centos-7:   * docker_service[default] action start
-I, [2022-08-28T17:24:50.315504 #32839]  INFO -- default-centos-7:     * docker_service_manager_systemd[default] action start
-I, [2022-08-28T17:24:50.323555 #32839]  INFO -- default-centos-7:       * directory[/usr/libexec/docker] action create (up to date)
-I, [2022-08-28T17:24:50.355943 #32839]  INFO -- default-centos-7:       * template[/usr/libexec/docker/docker-wait-ready] action create (up to date)
-I, [2022-08-28T17:24:50.356026 #32839]  INFO -- default-centos-7:       * template[/lib/systemd/system/docker.socket] action create (skipped due to not_if)
-I, [2022-08-28T17:24:50.356048 #32839]  INFO -- default-centos-7:       * directory[/etc/containerd] action create (up to date)
-I, [2022-08-28T17:24:50.371927 #32839]  INFO -- default-centos-7:       * file[/etc/containerd/config.toml] action create_if_missing (up to date)
-I, [2022-08-28T17:24:50.372003 #32839]  INFO -- default-centos-7:       * template[/etc/systemd/system/containerd.service] action create (skipped due to not_if)
-I, [2022-08-28T17:24:50.372037 #32839]  INFO -- default-centos-7:       * template[/lib/systemd/system/docker.service] action create (skipped due to not_if)
-I, [2022-08-28T17:24:50.378987 #32839]  INFO -- default-centos-7:       * template[/etc/systemd/system/docker.socket] action create (up to date)
-I, [2022-08-28T17:24:50.406972 #32839]  INFO -- default-centos-7:       * template[/etc/systemd/system/docker.service] action create (up to date)
-I, [2022-08-28T17:24:50.407051 #32839]  INFO -- default-centos-7:       * execute[systemctl daemon-reload] action nothing (skipped due to action :nothing)
-I, [2022-08-28T17:24:50.407087 #32839]  INFO -- default-centos-7:       * execute[systemctl try-restart docker] action nothing (skipped due to action :nothing)
-I, [2022-08-28T17:24:50.463449 #32839]  INFO -- default-centos-7:       * service[docker] action enable (up to date)
-I, [2022-08-28T17:24:50.534213 #32839]  INFO -- default-centos-7:       * service[docker] action start (up to date)
-I, [2022-08-28T17:24:50.534347 #32839]  INFO -- default-centos-7: (up to date)
-I, [2022-08-28T17:24:50.534396 #32839]  INFO -- default-centos-7:      (up to date)
-I, [2022-08-28T17:25:08.046329 #32839]  INFO -- default-centos-7:   * docker_image[bitnami/prometheus] action pull
-I, [2022-08-28T17:25:08.046415 #32839]  INFO -- default-centos-7:     - Pull image bitnami/prometheus:latest
-I, [2022-08-28T17:25:08.141214 #32839]  INFO -- default-centos-7:   * docker_container[prometheus] action run
-I, [2022-08-28T17:25:08.141299 #32839]  INFO -- default-centos-7:     - create prometheus
-I, [2022-08-28T17:25:08.141355 #32839]  INFO -- default-centos-7:     -   set repo                        to "bitnami/prometheus"
-I, [2022-08-28T17:25:08.141410 #32839]  INFO -- default-centos-7:     -   set tag                         to "latest"
-I, [2022-08-28T17:25:08.141455 #32839]  INFO -- default-centos-7:     -   set command                     to ["--config.file=/etc/prometheus/prometheus.yml"]
-I, [2022-08-28T17:25:08.141507 #32839]  INFO -- default-centos-7:     -   set cap_add                     to nil (default value)
-I, [2022-08-28T17:25:08.141555 #32839]  INFO -- default-centos-7:     -   set cap_drop                    to nil (default value)
-I, [2022-08-28T17:25:08.141605 #32839]  INFO -- default-centos-7:     -   set cgroup_parent               to "" (default value)
-I, [2022-08-28T17:25:08.141648 #32839]  INFO -- default-centos-7:     -   set cpus                        to 0 (default value)
-I, [2022-08-28T17:25:08.141682 #32839]  INFO -- default-centos-7:     -   set cpu_shares                  to 0 (default value)
-I, [2022-08-28T17:25:08.141717 #32839]  INFO -- default-centos-7:     -   set cpuset_cpus                 to "" (default value)
-I, [2022-08-28T17:25:08.141749 #32839]  INFO -- default-centos-7:     -   set devices                     to [] (default value)
-I, [2022-08-28T17:25:08.141784 #32839]  INFO -- default-centos-7:     -   set dns                         to [] (default value)
-I, [2022-08-28T17:25:08.141820 #32839]  INFO -- default-centos-7:     -   set dns_search                  to [] (default value)
-I, [2022-08-28T17:25:08.141858 #32839]  INFO -- default-centos-7:     -   set domain_name                 to "" (default value)
-I, [2022-08-28T17:25:08.141894 #32839]  INFO -- default-centos-7:     -   set entrypoint                  to nil (default value)
-I, [2022-08-28T17:25:08.141926 #32839]  INFO -- default-centos-7:     -   set env                         to [] (default value)
-I, [2022-08-28T17:25:08.141958 #32839]  INFO -- default-centos-7:     -   set extra_hosts                 to nil (default value)
-I, [2022-08-28T17:25:08.141994 #32839]  INFO -- default-centos-7:     -   set exposed_ports               to {"9090/tcp"=>{}}
-I, [2022-08-28T17:25:08.142043 #32839]  INFO -- default-centos-7:     -   set health_check                to nil (default value)
-I, [2022-08-28T17:25:08.142090 #32839]  INFO -- default-centos-7:     -   set hostname                    to nil (default value)
-I, [2022-08-28T17:25:08.142139 #32839]  INFO -- default-centos-7:     -   set ipc_mode                    to "shareable" (default value)
-I, [2022-08-28T17:25:08.142192 #32839]  INFO -- default-centos-7:     -   set kernel_memory               to 0 (default value)
-I, [2022-08-28T17:25:08.142238 #32839]  INFO -- default-centos-7:     -   set labels                      to {} (default value)
-I, [2022-08-28T17:25:08.142290 #32839]  INFO -- default-centos-7:     -   set links                       to nil (default value)
-I, [2022-08-28T17:25:08.142340 #32839]  INFO -- default-centos-7:     -   set init                        to nil (default value)
-I, [2022-08-28T17:25:08.142398 #32839]  INFO -- default-centos-7:     -   set ip_address                  to nil (default value)
-I, [2022-08-28T17:25:08.142444 #32839]  INFO -- default-centos-7:     -   set mac_address                 to nil (default value)
-I, [2022-08-28T17:25:08.142495 #32839]  INFO -- default-centos-7:     -   set memory                      to 0 (default value)
-I, [2022-08-28T17:25:08.142540 #32839]  INFO -- default-centos-7:     -   set memory_swap                 to nil (default value)
-I, [2022-08-28T17:25:08.142591 #32839]  INFO -- default-centos-7:     -   set memory_swappiness           to 0 (default value)
-I, [2022-08-28T17:25:08.142637 #32839]  INFO -- default-centos-7:     -   set memory_reservation          to 0 (default value)
-I, [2022-08-28T17:25:08.142687 #32839]  INFO -- default-centos-7:     -   set network_disabled            to false (default value)
-I, [2022-08-28T17:25:08.142732 #32839]  INFO -- default-centos-7:     -   set network_mode                to "bridge"
-I, [2022-08-28T17:25:08.142780 #32839]  INFO -- default-centos-7:     -   set network_aliases             to [] (default value)
-I, [2022-08-28T17:25:08.142831 #32839]  INFO -- default-centos-7:     -   set oom_kill_disable            to false (default value)
-I, [2022-08-28T17:25:08.142880 #32839]  INFO -- default-centos-7:     -   set oom_score_adj               to -500 (default value)
-I, [2022-08-28T17:25:08.142924 #32839]  INFO -- default-centos-7:     -   set outfile                     to nil (default value)
-I, [2022-08-28T17:25:08.142968 #32839]  INFO -- default-centos-7:     -   set port_bindings               to {"9090/tcp"=>[{"HostIp"=>"0.0.0.0", "HostPort"=>"9090"}]}
-I, [2022-08-28T17:25:08.143010 #32839]  INFO -- default-centos-7:     -   set pid_mode                    to "" (default value)
-I, [2022-08-28T17:25:08.143056 #32839]  INFO -- default-centos-7:     -   set privileged                  to false (default value)
-I, [2022-08-28T17:25:08.143098 #32839]  INFO -- default-centos-7:     -   set publish_all_ports           to false (default value)
-I, [2022-08-28T17:25:08.143141 #32839]  INFO -- default-centos-7:     -   set reload_signal               to "SIGHUP" (default value)
-I, [2022-08-28T17:25:08.143186 #32839]  INFO -- default-centos-7:     -   set remove_volumes              to false (default value)
-I, [2022-08-28T17:25:08.143230 #32839]  INFO -- default-centos-7:     -   set restart_maximum_retry_count to 0 (default value)
-I, [2022-08-28T17:25:08.143276 #32839]  INFO -- default-centos-7:     -   set restart_policy              to nil (default value)
-I, [2022-08-28T17:25:08.143322 #32839]  INFO -- default-centos-7:     -   set runtime                     to "runc" (default value)
-I, [2022-08-28T17:25:08.143367 #32839]  INFO -- default-centos-7:     -   set ro_rootfs                   to false (default value)
-I, [2022-08-28T17:25:08.143411 #32839]  INFO -- default-centos-7:     -   set security_opt                to nil (default value)
-I, [2022-08-28T17:25:08.143454 #32839]  INFO -- default-centos-7:     -   set shm_size                    to 67108864 (default value)
-I, [2022-08-28T17:25:08.143495 #32839]  INFO -- default-centos-7:     -   set signal                      to "SIGTERM" (default value)
-I, [2022-08-28T17:25:08.143536 #32839]  INFO -- default-centos-7:     -   set sysctls                     to {} (default value)
-I, [2022-08-28T17:25:08.143581 #32839]  INFO -- default-centos-7:     -   set tty                         to false (default value)
-I, [2022-08-28T17:25:08.143623 #32839]  INFO -- default-centos-7:     -   set ulimits                     to nil (default value)
-I, [2022-08-28T17:25:08.143665 #32839]  INFO -- default-centos-7:     -   set user                        to nil (default value)
-I, [2022-08-28T17:25:08.143705 #32839]  INFO -- default-centos-7:     -   set userns_mode                 to "" (default value)
-I, [2022-08-28T17:25:08.143745 #32839]  INFO -- default-centos-7:     -   set uts_mode                    to "" (default value)
-I, [2022-08-28T17:25:08.143796 #32839]  INFO -- default-centos-7:     -   set volumes                     to {}
-I, [2022-08-28T17:25:08.143839 #32839]  INFO -- default-centos-7:     -   set volumes_from                to nil (default value)
-I, [2022-08-28T17:25:08.143881 #32839]  INFO -- default-centos-7:     -   set volume_driver               to nil (default value)
-I, [2022-08-28T17:25:08.143924 #32839]  INFO -- default-centos-7:     -   set working_dir                 to nil (default value)
-I, [2022-08-28T17:25:08.533755 #32839]  INFO -- default-centos-7:     -   set volumes_binds               to ["/etc/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro"]
-I, [2022-08-28T17:25:08.558325 #32839]  INFO -- default-centos-7:     - starting prometheus
-I, [2022-08-28T17:25:14.452059 #32839]  INFO -- default-centos-7:   * docker_image[bitnami/node-exporter] action pull
-I, [2022-08-28T17:25:14.452120 #32839]  INFO -- default-centos-7:     - Pull image bitnami/node-exporter:latest
-I, [2022-08-28T17:25:14.551221 #32839]  INFO -- default-centos-7:   * docker_container[node-exporter] action run
-I, [2022-08-28T17:25:14.551276 #32839]  INFO -- default-centos-7:     - create node-exporter
-I, [2022-08-28T17:25:14.551299 #32839]  INFO -- default-centos-7:     -   set repo                        to "bitnami/node-exporter"
-I, [2022-08-28T17:25:14.551319 #32839]  INFO -- default-centos-7:     -   set tag                         to "latest"
-I, [2022-08-28T17:25:14.551337 #32839]  INFO -- default-centos-7:     -   set command                     to ["--path.rootfs=/host"]
-I, [2022-08-28T17:25:14.551354 #32839]  INFO -- default-centos-7:     -   set cap_add                     to nil (default value)
-I, [2022-08-28T17:25:14.551372 #32839]  INFO -- default-centos-7:     -   set cap_drop                    to nil (default value)
-I, [2022-08-28T17:25:14.551388 #32839]  INFO -- default-centos-7:     -   set cgroup_parent               to "" (default value)
-I, [2022-08-28T17:25:14.551405 #32839]  INFO -- default-centos-7:     -   set cpus                        to 0 (default value)
-I, [2022-08-28T17:25:14.551423 #32839]  INFO -- default-centos-7:     -   set cpu_shares                  to 0 (default value)
-I, [2022-08-28T17:25:14.551441 #32839]  INFO -- default-centos-7:     -   set cpuset_cpus                 to "" (default value)
-I, [2022-08-28T17:25:14.551456 #32839]  INFO -- default-centos-7:     -   set devices                     to [] (default value)
-I, [2022-08-28T17:25:14.551473 #32839]  INFO -- default-centos-7:     -   set dns                         to [] (default value)
-I, [2022-08-28T17:25:14.551491 #32839]  INFO -- default-centos-7:     -   set dns_search                  to [] (default value)
-I, [2022-08-28T17:25:14.551507 #32839]  INFO -- default-centos-7:     -   set domain_name                 to "" (default value)
-I, [2022-08-28T17:25:14.551525 #32839]  INFO -- default-centos-7:     -   set entrypoint                  to nil (default value)
-I, [2022-08-28T17:25:14.551546 #32839]  INFO -- default-centos-7:     -   set env                         to [] (default value)
-I, [2022-08-28T17:25:14.551564 #32839]  INFO -- default-centos-7:     -   set extra_hosts                 to nil (default value)
-I, [2022-08-28T17:25:14.551579 #32839]  INFO -- default-centos-7:     -   set exposed_ports               to {} (default value)
-I, [2022-08-28T17:25:14.551595 #32839]  INFO -- default-centos-7:     -   set health_check                to nil (default value)
-I, [2022-08-28T17:25:14.551614 #32839]  INFO -- default-centos-7:     -   set hostname                    to nil (default value)
-I, [2022-08-28T17:25:14.551629 #32839]  INFO -- default-centos-7:     -   set ipc_mode                    to "shareable" (default value)
-I, [2022-08-28T17:25:14.551644 #32839]  INFO -- default-centos-7:     -   set kernel_memory               to 0 (default value)
-I, [2022-08-28T17:25:14.551661 #32839]  INFO -- default-centos-7:     -   set labels                      to {} (default value)
-I, [2022-08-28T17:25:14.551676 #32839]  INFO -- default-centos-7:     -   set links                       to nil (default value)
-I, [2022-08-28T17:25:14.551700 #32839]  INFO -- default-centos-7:     -   set init                        to nil (default value)
-I, [2022-08-28T17:25:14.551719 #32839]  INFO -- default-centos-7:     -   set ip_address                  to nil (default value)
-I, [2022-08-28T17:25:14.551738 #32839]  INFO -- default-centos-7:     -   set mac_address                 to nil (default value)
-I, [2022-08-28T17:25:14.551753 #32839]  INFO -- default-centos-7:     -   set memory                      to 0 (default value)
-I, [2022-08-28T17:25:14.551770 #32839]  INFO -- default-centos-7:     -   set memory_swap                 to nil (default value)
-I, [2022-08-28T17:25:14.551785 #32839]  INFO -- default-centos-7:     -   set memory_swappiness           to 0 (default value)
-I, [2022-08-28T17:25:14.551799 #32839]  INFO -- default-centos-7:     -   set memory_reservation          to 0 (default value)
-I, [2022-08-28T17:25:14.551814 #32839]  INFO -- default-centos-7:     -   set network_disabled            to false (default value)
-I, [2022-08-28T17:25:14.551828 #32839]  INFO -- default-centos-7:     -   set network_mode                to "host"
-I, [2022-08-28T17:25:14.551845 #32839]  INFO -- default-centos-7:     -   set network_aliases             to [] (default value)
-I, [2022-08-28T17:25:14.551860 #32839]  INFO -- default-centos-7:     -   set oom_kill_disable            to false (default value)
-I, [2022-08-28T17:25:14.551874 #32839]  INFO -- default-centos-7:     -   set oom_score_adj               to -500 (default value)
-I, [2022-08-28T17:25:14.551892 #32839]  INFO -- default-centos-7:     -   set outfile                     to nil (default value)
-I, [2022-08-28T17:25:14.551907 #32839]  INFO -- default-centos-7:     -   set port_bindings               to {} (default value)
-I, [2022-08-28T17:25:14.551921 #32839]  INFO -- default-centos-7:     -   set pid_mode                    to "host"
-I, [2022-08-28T17:25:14.551935 #32839]  INFO -- default-centos-7:     -   set privileged                  to false (default value)
-I, [2022-08-28T17:25:14.551949 #32839]  INFO -- default-centos-7:     -   set publish_all_ports           to false (default value)
-I, [2022-08-28T17:25:14.551966 #32839]  INFO -- default-centos-7:     -   set reload_signal               to "SIGHUP" (default value)
-I, [2022-08-28T17:25:14.551982 #32839]  INFO -- default-centos-7:     -   set remove_volumes              to false (default value)
-I, [2022-08-28T17:25:14.551996 #32839]  INFO -- default-centos-7:     -   set restart_maximum_retry_count to 0 (default value)
-I, [2022-08-28T17:25:14.552011 #32839]  INFO -- default-centos-7:     -   set restart_policy              to nil (default value)
-I, [2022-08-28T17:25:14.552026 #32839]  INFO -- default-centos-7:     -   set runtime                     to "runc" (default value)
-I, [2022-08-28T17:25:14.552040 #32839]  INFO -- default-centos-7:     -   set ro_rootfs                   to false (default value)
-I, [2022-08-28T17:25:14.552054 #32839]  INFO -- default-centos-7:     -   set security_opt                to nil (default value)
-I, [2022-08-28T17:25:14.552068 #32839]  INFO -- default-centos-7:     -   set shm_size                    to 67108864 (default value)
-I, [2022-08-28T17:25:14.552082 #32839]  INFO -- default-centos-7:     -   set signal                      to "SIGTERM" (default value)
-I, [2022-08-28T17:25:14.552096 #32839]  INFO -- default-centos-7:     -   set sysctls                     to {} (default value)
-I, [2022-08-28T17:25:14.552111 #32839]  INFO -- default-centos-7:     -   set tty                         to false (default value)
-I, [2022-08-28T17:25:14.552125 #32839]  INFO -- default-centos-7:     -   set ulimits                     to nil (default value)
-I, [2022-08-28T17:25:14.552139 #32839]  INFO -- default-centos-7:     -   set user                        to nil (default value)
-I, [2022-08-28T17:25:14.552153 #32839]  INFO -- default-centos-7:     -   set userns_mode                 to "" (default value)
-I, [2022-08-28T17:25:14.552172 #32839]  INFO -- default-centos-7:     -   set uts_mode                    to "" (default value)
-I, [2022-08-28T17:25:14.552186 #32839]  INFO -- default-centos-7:     -   set volumes                     to {}
-I, [2022-08-28T17:25:14.552201 #32839]  INFO -- default-centos-7:     -   set volumes_from                to nil (default value)
-I, [2022-08-28T17:25:14.552214 #32839]  INFO -- default-centos-7:     -   set volume_driver               to nil (default value)
-I, [2022-08-28T17:25:14.552229 #32839]  INFO -- default-centos-7:     -   set working_dir                 to nil (default value)
-I, [2022-08-28T17:25:14.758102 #32839]  INFO -- default-centos-7:     -   set volumes_binds               to ["/:/host:ro,rslave"]
-I, [2022-08-28T17:25:14.777142 #32839]  INFO -- default-centos-7:     - starting node-exporter
-I, [2022-08-28T17:25:28.016884 #32839]  INFO -- default-centos-7:   * docker_image[grafana/grafana] action pull
-I, [2022-08-28T17:25:28.016953 #32839]  INFO -- default-centos-7:     - Pull image grafana/grafana:latest
-I, [2022-08-28T17:25:28.190179 #32839]  INFO -- default-centos-7:   * docker_container[grafana] action run
-I, [2022-08-28T17:25:28.190241 #32839]  INFO -- default-centos-7:     - create grafana
-I, [2022-08-28T17:25:28.190275 #32839]  INFO -- default-centos-7:     -   set repo                        to "grafana/grafana"
-I, [2022-08-28T17:25:28.190311 #32839]  INFO -- default-centos-7:     -   set tag                         to "latest"
-I, [2022-08-28T17:25:28.190342 #32839]  INFO -- default-centos-7:     -   set command                     to nil (default value)
-I, [2022-08-28T17:25:28.200260 #32839]  INFO -- default-centos-7:     -   set cap_add                     to nil (default value)
-I, [2022-08-28T17:25:28.200324 #32839]  INFO -- default-centos-7:     -   set cap_drop                    to nil (default value)
-I, [2022-08-28T17:25:28.200365 #32839]  INFO -- default-centos-7:     -   set cgroup_parent               to "" (default value)
-I, [2022-08-28T17:25:28.200401 #32839]  INFO -- default-centos-7:     -   set cpus                        to 0 (default value)
-I, [2022-08-28T17:25:28.200436 #32839]  INFO -- default-centos-7:     -   set cpu_shares                  to 0 (default value)
-I, [2022-08-28T17:25:28.200471 #32839]  INFO -- default-centos-7:     -   set cpuset_cpus                 to "" (default value)
-I, [2022-08-28T17:25:28.207247 #32839]  INFO -- default-centos-7:     -   set devices                     to [] (default value)
-I, [2022-08-28T17:25:28.207317 #32839]  INFO -- default-centos-7:     -   set dns                         to [] (default value)
-I, [2022-08-28T17:25:28.207356 #32839]  INFO -- default-centos-7:     -   set dns_search                  to [] (default value)
-I, [2022-08-28T17:25:28.207402 #32839]  INFO -- default-centos-7:     -   set domain_name                 to "" (default value)
-I, [2022-08-28T17:25:28.207441 #32839]  INFO -- default-centos-7:     -   set entrypoint                  to nil (default value)
-I, [2022-08-28T17:25:28.207479 #32839]  INFO -- default-centos-7:     -   set env                         to [] (default value)
-I, [2022-08-28T17:25:28.207515 #32839]  INFO -- default-centos-7:     -   set extra_hosts                 to nil (default value)
-I, [2022-08-28T17:25:28.207550 #32839]  INFO -- default-centos-7:     -   set exposed_ports               to {"3000/tcp"=>{}}
-I, [2022-08-28T17:25:28.207587 #32839]  INFO -- default-centos-7:     -   set health_check                to nil (default value)
-I, [2022-08-28T17:25:28.207628 #32839]  INFO -- default-centos-7:     -   set hostname                    to nil (default value)
-I, [2022-08-28T17:25:28.207670 #32839]  INFO -- default-centos-7:     -   set ipc_mode                    to "shareable" (default value)
-I, [2022-08-28T17:25:28.207710 #32839]  INFO -- default-centos-7:     -   set kernel_memory               to 0 (default value)
-I, [2022-08-28T17:25:28.207751 #32839]  INFO -- default-centos-7:     -   set labels                      to {} (default value)
-I, [2022-08-28T17:25:28.207803 #32839]  INFO -- default-centos-7:     -   set links                       to nil (default value)
-I, [2022-08-28T17:25:28.207845 #32839]  INFO -- default-centos-7:     -   set init                        to nil (default value)
-I, [2022-08-28T17:25:28.207886 #32839]  INFO -- default-centos-7:     -   set ip_address                  to nil (default value)
-I, [2022-08-28T17:25:28.207926 #32839]  INFO -- default-centos-7:     -   set mac_address                 to nil (default value)
-I, [2022-08-28T17:25:28.207968 #32839]  INFO -- default-centos-7:     -   set memory                      to 0 (default value)
-I, [2022-08-28T17:25:28.219009 #32839]  INFO -- default-centos-7:     -   set memory_swap                 to nil (default value)
-I, [2022-08-28T17:25:28.219100 #32839]  INFO -- default-centos-7:     -   set memory_swappiness           to 0 (default value)
-I, [2022-08-28T17:25:28.219133 #32839]  INFO -- default-centos-7:     -   set memory_reservation          to 0 (default value)
-I, [2022-08-28T17:25:28.219154 #32839]  INFO -- default-centos-7:     -   set network_disabled            to false (default value)
-I, [2022-08-28T17:25:28.219171 #32839]  INFO -- default-centos-7:     -   set network_mode                to "bridge"
-I, [2022-08-28T17:25:28.219195 #32839]  INFO -- default-centos-7:     -   set network_aliases             to [] (default value)
-I, [2022-08-28T17:25:28.219237 #32839]  INFO -- default-centos-7:     -   set oom_kill_disable            to false (default value)
-I, [2022-08-28T17:25:28.219258 #32839]  INFO -- default-centos-7:     -   set oom_score_adj               to -500 (default value)
-I, [2022-08-28T17:25:28.219275 #32839]  INFO -- default-centos-7:     -   set outfile                     to nil (default value)
-I, [2022-08-28T17:25:28.219299 #32839]  INFO -- default-centos-7:     -   set port_bindings               to {"3000/tcp"=>[{"HostIp"=>"0.0.0.0", "HostPort"=>"3000"}]}
-I, [2022-08-28T17:25:28.219322 #32839]  INFO -- default-centos-7:     -   set pid_mode                    to "" (default value)
-I, [2022-08-28T17:25:28.219340 #32839]  INFO -- default-centos-7:     -   set privileged                  to false (default value)
-I, [2022-08-28T17:25:28.219356 #32839]  INFO -- default-centos-7:     -   set publish_all_ports           to false (default value)
-I, [2022-08-28T17:25:28.219377 #32839]  INFO -- default-centos-7:     -   set reload_signal               to "SIGHUP" (default value)
-I, [2022-08-28T17:25:28.219404 #32839]  INFO -- default-centos-7:     -   set remove_volumes              to false (default value)
-I, [2022-08-28T17:25:28.219421 #32839]  INFO -- default-centos-7:     -   set restart_maximum_retry_count to 0 (default value)
-I, [2022-08-28T17:25:28.219437 #32839]  INFO -- default-centos-7:     -   set restart_policy              to nil (default value)
-I, [2022-08-28T17:25:28.219453 #32839]  INFO -- default-centos-7:     -   set runtime                     to "runc" (default value)
-I, [2022-08-28T17:25:28.219478 #32839]  INFO -- default-centos-7:     -   set ro_rootfs                   to false (default value)
-I, [2022-08-28T17:25:28.219497 #32839]  INFO -- default-centos-7:     -   set security_opt                to nil (default value)
-I, [2022-08-28T17:25:28.219513 #32839]  INFO -- default-centos-7:     -   set shm_size                    to 67108864 (default value)
-I, [2022-08-28T17:25:28.226698 #32839]  INFO -- default-centos-7:     -   set signal                      to "SIGTERM" (default value)
-I, [2022-08-28T17:25:28.226763 #32839]  INFO -- default-centos-7:     -   set sysctls                     to {} (default value)
-I, [2022-08-28T17:25:28.234412 #32839]  INFO -- default-centos-7:     -   set tty                         to false (default value)
-I, [2022-08-28T17:25:28.234484 #32839]  INFO -- default-centos-7:     -   set ulimits                     to nil (default value)
-I, [2022-08-28T17:25:28.234507 #32839]  INFO -- default-centos-7:     -   set user                        to nil (default value)
-I, [2022-08-28T17:25:28.234524 #32839]  INFO -- default-centos-7:     -   set userns_mode                 to "" (default value)
-I, [2022-08-28T17:25:28.234553 #32839]  INFO -- default-centos-7:     -   set uts_mode                    to "" (default value)
-I, [2022-08-28T17:25:28.234590 #32839]  INFO -- default-centos-7:     -   set volumes                     to {}
-I, [2022-08-28T17:25:28.234619 #32839]  INFO -- default-centos-7:     -   set volumes_from                to nil (default value)
-I, [2022-08-28T17:25:28.234637 #32839]  INFO -- default-centos-7:     -   set volume_driver               to nil (default value)
-I, [2022-08-28T17:25:28.234653 #32839]  INFO -- default-centos-7:     -   set working_dir                 to nil (default value)
-I, [2022-08-28T17:25:28.711642 #32839]  INFO -- default-centos-7:     -   set volumes_binds               to ["/etc/grafana/provisioning:/etc/grafana/provisioning"]
-I, [2022-08-28T17:25:28.752821 #32839]  INFO -- default-centos-7:     - starting grafana
-I, [2022-08-28T17:25:28.783251 #32839]  INFO -- default-centos-7: Recipe: cadvisor::default
-I, [2022-08-28T17:25:36.884357 #32839]  INFO -- default-centos-7:   * docker_image[gcr.io/cadvisor/cadvisor] action pull
-I, [2022-08-28T17:25:36.884443 #32839]  INFO -- default-centos-7:     - Pull image gcr.io/cadvisor/cadvisor:latest
-I, [2022-08-28T17:25:36.945645 #32839]  INFO -- default-centos-7:   * docker_container[cadvisor] action run
-I, [2022-08-28T17:25:36.945703 #32839]  INFO -- default-centos-7:     - create cadvisor
-I, [2022-08-28T17:25:36.945729 #32839]  INFO -- default-centos-7:     -   set repo                        to "gcr.io/cadvisor/cadvisor"
-I, [2022-08-28T17:25:36.945752 #32839]  INFO -- default-centos-7:     -   set tag                         to "latest"
-I, [2022-08-28T17:25:36.945773 #32839]  INFO -- default-centos-7:     -   set command                     to nil (default value)
-I, [2022-08-28T17:25:36.945797 #32839]  INFO -- default-centos-7:     -   set cap_add                     to nil (default value)
-I, [2022-08-28T17:25:36.945817 #32839]  INFO -- default-centos-7:     -   set cap_drop                    to nil (default value)
-I, [2022-08-28T17:25:36.945838 #32839]  INFO -- default-centos-7:     -   set cgroup_parent               to "" (default value)
-I, [2022-08-28T17:25:36.945856 #32839]  INFO -- default-centos-7:     -   set cpus                        to 0 (default value)
-I, [2022-08-28T17:25:36.945876 #32839]  INFO -- default-centos-7:     -   set cpu_shares                  to 0 (default value)
-I, [2022-08-28T17:25:36.945898 #32839]  INFO -- default-centos-7:     -   set cpuset_cpus                 to "" (default value)
-I, [2022-08-28T17:25:36.945920 #32839]  INFO -- default-centos-7:     -   set devices                     to [] (default value)
-I, [2022-08-28T17:25:36.945943 #32839]  INFO -- default-centos-7:     -   set dns                         to [] (default value)
-I, [2022-08-28T17:25:36.945964 #32839]  INFO -- default-centos-7:     -   set dns_search                  to [] (default value)
-I, [2022-08-28T17:25:36.945982 #32839]  INFO -- default-centos-7:     -   set domain_name                 to "" (default value)
-I, [2022-08-28T17:25:36.945997 #32839]  INFO -- default-centos-7:     -   set entrypoint                  to nil (default value)
-I, [2022-08-28T17:25:36.946017 #32839]  INFO -- default-centos-7:     -   set env                         to [] (default value)
-I, [2022-08-28T17:25:36.946038 #32839]  INFO -- default-centos-7:     -   set extra_hosts                 to nil (default value)
-I, [2022-08-28T17:25:36.946060 #32839]  INFO -- default-centos-7:     -   set exposed_ports               to {"8080/tcp"=>{}}
-I, [2022-08-28T17:25:36.946077 #32839]  INFO -- default-centos-7:     -   set health_check                to nil (default value)
-I, [2022-08-28T17:25:36.946099 #32839]  INFO -- default-centos-7:     -   set hostname                    to nil (default value)
-I, [2022-08-28T17:25:36.946121 #32839]  INFO -- default-centos-7:     -   set ipc_mode                    to "shareable" (default value)
-I, [2022-08-28T17:25:36.946139 #32839]  INFO -- default-centos-7:     -   set kernel_memory               to 0 (default value)
-I, [2022-08-28T17:25:36.946171 #32839]  INFO -- default-centos-7:     -   set labels                      to {} (default value)
-I, [2022-08-28T17:25:36.946193 #32839]  INFO -- default-centos-7:     -   set links                       to nil (default value)
-I, [2022-08-28T17:25:36.946211 #32839]  INFO -- default-centos-7:     -   set init                        to nil (default value)
-I, [2022-08-28T17:25:36.946230 #32839]  INFO -- default-centos-7:     -   set ip_address                  to nil (default value)
-I, [2022-08-28T17:25:36.946251 #32839]  INFO -- default-centos-7:     -   set mac_address                 to nil (default value)
-I, [2022-08-28T17:25:36.946268 #32839]  INFO -- default-centos-7:     -   set memory                      to 0 (default value)
-I, [2022-08-28T17:25:36.946287 #32839]  INFO -- default-centos-7:     -   set memory_swap                 to nil (default value)
-I, [2022-08-28T17:25:36.946304 #32839]  INFO -- default-centos-7:     -   set memory_swappiness           to 0 (default value)
-I, [2022-08-28T17:25:36.946322 #32839]  INFO -- default-centos-7:     -   set memory_reservation          to 0 (default value)
-I, [2022-08-28T17:25:36.946339 #32839]  INFO -- default-centos-7:     -   set network_disabled            to false (default value)
-I, [2022-08-28T17:25:36.946358 #32839]  INFO -- default-centos-7:     -   set network_mode                to "bridge"
-I, [2022-08-28T17:25:36.946375 #32839]  INFO -- default-centos-7:     -   set network_aliases             to [] (default value)
-I, [2022-08-28T17:25:36.946394 #32839]  INFO -- default-centos-7:     -   set oom_kill_disable            to false (default value)
-I, [2022-08-28T17:25:36.946411 #32839]  INFO -- default-centos-7:     -   set oom_score_adj               to -500 (default value)
-I, [2022-08-28T17:25:36.946429 #32839]  INFO -- default-centos-7:     -   set outfile                     to nil (default value)
-I, [2022-08-28T17:25:36.946446 #32839]  INFO -- default-centos-7:     -   set port_bindings               to {"8080/tcp"=>[{"HostIp"=>"0.0.0.0", "HostPort"=>"8080"}]}
-I, [2022-08-28T17:25:36.946462 #32839]  INFO -- default-centos-7:     -   set pid_mode                    to "" (default value)
-I, [2022-08-28T17:25:36.946477 #32839]  INFO -- default-centos-7:     -   set privileged                  to false (default value)
-I, [2022-08-28T17:25:36.946497 #32839]  INFO -- default-centos-7:     -   set publish_all_ports           to false (default value)
-I, [2022-08-28T17:25:36.946514 #32839]  INFO -- default-centos-7:     -   set reload_signal               to "SIGHUP" (default value)
-I, [2022-08-28T17:25:36.946529 #32839]  INFO -- default-centos-7:     -   set remove_volumes              to false (default value)
-I, [2022-08-28T17:25:36.946544 #32839]  INFO -- default-centos-7:     -   set restart_maximum_retry_count to 0 (default value)
-I, [2022-08-28T17:25:36.946560 #32839]  INFO -- default-centos-7:     -   set restart_policy              to nil (default value)
-I, [2022-08-28T17:25:36.946578 #32839]  INFO -- default-centos-7:     -   set runtime                     to "runc" (default value)
-I, [2022-08-28T17:25:36.946595 #32839]  INFO -- default-centos-7:     -   set ro_rootfs                   to false (default value)
-I, [2022-08-28T17:25:36.946610 #32839]  INFO -- default-centos-7:     -   set security_opt                to nil (default value)
-I, [2022-08-28T17:25:36.946624 #32839]  INFO -- default-centos-7:     -   set shm_size                    to 67108864 (default value)
-I, [2022-08-28T17:25:36.946640 #32839]  INFO -- default-centos-7:     -   set signal                      to "SIGTERM" (default value)
-I, [2022-08-28T17:25:36.946655 #32839]  INFO -- default-centos-7:     -   set sysctls                     to {} (default value)
-I, [2022-08-28T17:25:36.946669 #32839]  INFO -- default-centos-7:     -   set tty                         to false (default value)
-I, [2022-08-28T17:25:36.946684 #32839]  INFO -- default-centos-7:     -   set ulimits                     to nil (default value)
-I, [2022-08-28T17:25:36.946706 #32839]  INFO -- default-centos-7:     -   set user                        to nil (default value)
-I, [2022-08-28T17:25:36.946722 #32839]  INFO -- default-centos-7:     -   set userns_mode                 to "" (default value)
-I, [2022-08-28T17:25:36.946736 #32839]  INFO -- default-centos-7:     -   set uts_mode                    to "" (default value)
-I, [2022-08-28T17:25:36.946751 #32839]  INFO -- default-centos-7:     -   set volumes                     to {}
-I, [2022-08-28T17:25:36.946765 #32839]  INFO -- default-centos-7:     -   set volumes_from                to nil (default value)
-I, [2022-08-28T17:25:36.946779 #32839]  INFO -- default-centos-7:     -   set volume_driver               to nil (default value)
-I, [2022-08-28T17:25:36.946792 #32839]  INFO -- default-centos-7:     -   set working_dir                 to nil (default value)
-I, [2022-08-28T17:25:37.273615 #32839]  INFO -- default-centos-7:     -   set volumes_binds               to ["/var/run:/var/run:rw", "/sys:/sys:ro", "/var/lib/docker/:/var/lib/docker:ro"]
-I, [2022-08-28T17:25:37.293168 #32839]  INFO -- default-centos-7:     - starting cadvisor
-I, [2022-08-28T17:25:37.422714 #32839]  INFO -- default-centos-7: 
-I, [2022-08-28T17:25:37.422784 #32839]  INFO -- default-centos-7: Running handlers:
-I, [2022-08-28T17:25:37.422835 #32839]  INFO -- default-centos-7: Running handlers complete
-I, [2022-08-28T17:25:37.422867 #32839]  INFO -- default-centos-7: Infra Phase complete, 30/61 resources updated in 01 minutes 36 seconds
-I, [2022-08-28T17:25:37.546014 #32839]  INFO -- default-centos-7: Downloading files from <default-centos-7>
-I, [2022-08-28T17:25:37.549503 #32839]  INFO -- default-centos-7: Finished converging <default-centos-7> (1m45.81s).
-I, [2022-08-28T17:25:37.549630 #32839]  INFO -- default-centos-7: -----> Setting up <default-centos-7>...
-I, [2022-08-28T17:25:37.550085 #32839]  INFO -- default-centos-7: Finished setting up <default-centos-7> (0m0.00s).
-I, [2022-08-28T17:25:37.550176 #32839]  INFO -- default-centos-7: -----> Verifying <default-centos-7>...
-I, [2022-08-28T17:25:39.951578 #32839]  INFO -- default-centos-7: Loaded tests from {:path=>".home.mli.chef-repo.test.integration.default"} 
-I, [2022-08-28T17:25:40.619926 #32839]  INFO -- default-centos-7: Finished verifying <default-centos-7> (0m3.07s).
+I, [2022-08-28T17:48:20.420431 #36192]  INFO -- default-centos-7: -----> Creating <default-centos-7>...
+I, [2022-08-28T17:48:20.855647 #36192]  INFO -- default-centos-7: /usr/share/rubygems-integration/all/gems/vagrant-2.2.19/plugins/kernel_v2/config/vm.rb:319:in `network': wrong number of arguments (given 2, expected 1) (ArgumentError)
+I, [2022-08-28T17:48:20.855735 #36192]  INFO -- default-centos-7: 	from /home/mli/chef-repo/.kitchen/kitchen-vagrant/default-centos-7/Vagrantfile:5:in `block in <top (required)>'
+I, [2022-08-28T17:48:20.855758 #36192]  INFO -- default-centos-7: 	from /usr/share/rubygems-integration/all/gems/vagrant-2.2.19/lib/vagrant/config/v2/loader.rb:37:in `load'
+I, [2022-08-28T17:48:20.855774 #36192]  INFO -- default-centos-7: 	from /usr/share/rubygems-integration/all/gems/vagrant-2.2.19/lib/vagrant/config/loader.rb:126:in `block (2 levels) in load'
+I, [2022-08-28T17:48:20.855794 #36192]  INFO -- default-centos-7: 	from /usr/share/rubygems-integration/all/gems/vagrant-2.2.19/lib/vagrant/config/loader.rb:119:in `each'
+I, [2022-08-28T17:48:20.855812 #36192]  INFO -- default-centos-7: 	from /usr/share/rubygems-integration/all/gems/vagrant-2.2.19/lib/vagrant/config/loader.rb:119:in `block in load'
+I, [2022-08-28T17:48:20.855832 #36192]  INFO -- default-centos-7: 	from /usr/share/rubygems-integration/all/gems/vagrant-2.2.19/lib/vagrant/config/loader.rb:116:in `each'
+I, [2022-08-28T17:48:20.855848 #36192]  INFO -- default-centos-7: 	from /usr/share/rubygems-integration/all/gems/vagrant-2.2.19/lib/vagrant/config/loader.rb:116:in `load'
+I, [2022-08-28T17:48:20.855864 #36192]  INFO -- default-centos-7: 	from /usr/share/rubygems-integration/all/gems/vagrant-2.2.19/lib/vagrant/vagrantfile.rb:29:in `initialize'
+I, [2022-08-28T17:48:20.855884 #36192]  INFO -- default-centos-7: 	from /usr/share/rubygems-integration/all/gems/vagrant-2.2.19/lib/vagrant/environment.rb:793:in `new'
+I, [2022-08-28T17:48:20.855904 #36192]  INFO -- default-centos-7: 	from /usr/share/rubygems-integration/all/gems/vagrant-2.2.19/lib/vagrant/environment.rb:793:in `vagrantfile'
+I, [2022-08-28T17:48:20.855922 #36192]  INFO -- default-centos-7: 	from /usr/share/rubygems-integration/all/gems/vagrant-2.2.19/lib/vagrant/environment.rb:974:in `process_configured_plugins'
+I, [2022-08-28T17:48:20.855940 #36192]  INFO -- default-centos-7: 	from /usr/share/rubygems-integration/all/gems/vagrant-2.2.19/lib/vagrant/environment.rb:178:in `initialize'
+I, [2022-08-28T17:48:20.855956 #36192]  INFO -- default-centos-7: 	from /usr/share/rubygems-integration/all/gems/vagrant-2.2.19/bin/vagrant:194:in `new'
+I, [2022-08-28T17:48:20.855974 #36192]  INFO -- default-centos-7: 	from /usr/share/rubygems-integration/all/gems/vagrant-2.2.19/bin/vagrant:194:in `<top (required)>'
+I, [2022-08-28T17:48:20.855990 #36192]  INFO -- default-centos-7: 	from /usr/bin/vagrant:25:in `load'
+I, [2022-08-28T17:48:20.856011 #36192]  INFO -- default-centos-7: 	from /usr/bin/vagrant:25:in `<main>'
+E, [2022-08-28T17:48:20.870799 #36192] ERROR -- default-centos-7: Create failed on instance <default-centos-7>.
+E, [2022-08-28T17:48:20.870949 #36192] ERROR -- default-centos-7: ------Exception-------
+E, [2022-08-28T17:48:20.870971 #36192] ERROR -- default-centos-7: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2022-08-28T17:48:20.870985 #36192] ERROR -- default-centos-7: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider virtualbox ----
+STDOUT: 
+STDERR: /usr/share/rubygems-integration/all/gems/vagrant-2.2.19/plugins/kernel_v2/config/vm.rb:319:in `network': wrong number of arguments (given 2, expected 1) (ArgumentError)
+	from /home/mli/chef-repo/.kitchen/kitchen-vagrant/default-centos-7/Vagrantfile:5:in `block in <top (required)>'
+	from /usr/share/rubygems-integration/all/gems/vagrant-2.2.19/lib/vagrant/config/v2/loader.rb:37:in `load'
+	from /usr/share/rubygems-integration/all/gems/vagrant-2.2.19/lib/vagrant/config/loader.rb:126:in `block (2 levels) in load'
+	from /usr/share/rubygems-integration/all/gems/vagrant-2.2.19/lib/vagrant/config/loader.rb:119:in `each'
+	from /usr/share/rubygems-integration/all/gems/vagrant-2.2.19/lib/vagrant/config/loader.rb:119:in `block in load'
+	from /usr/share/rubygems-integration/all/gems/vagrant-2.2.19/lib/vagrant/config/loader.rb:116:in `each'
+	from /usr/share/rubygems-integration/all/gems/vagrant-2.2.19/lib/vagrant/config/loader.rb:116:in `load'
+	from /usr/share/rubygems-integration/all/gems/vagrant-2.2.19/lib/vagrant/vagrantfile.rb:29:in `initialize'
+	from /usr/share/rubygems-integration/all/gems/vagrant-2.2.19/lib/vagrant/environment.rb:793:in `new'
+	from /usr/share/rubygems-integration/all/gems/vagrant-2.2.19/lib/vagrant/environment.rb:793:in `vagrantfile'
+	from /usr/share/rubygems-integration/all/gems/vagrant-2.2.19/lib/vagrant/environment.rb:974:in `process_configured_plugins'
+	from /usr/share/rubygems-integration/all/gems/vagrant-2.2.19/lib/vagrant/environment.rb:178:in `initialize'
+	from /usr/share/rubygems-integration/all/gems/vagrant-2.2.19/bin/vagrant:194:in `new'
+	from /usr/share/rubygems-integration/all/gems/vagrant-2.2.19/bin/vagrant:194:in `<top (required)>'
+	from /usr/bin/vagrant:25:in `load'
+	from /usr/bin/vagrant:25:in `<main>'
+---- End output of vagrant up --no-provision --provider virtualbox ----
+Ran vagrant up --no-provision --provider virtualbox returned 1
+E, [2022-08-28T17:48:20.871007 #36192] ERROR -- default-centos-7: ----------------------
+E, [2022-08-28T17:48:20.871019 #36192] ERROR -- default-centos-7: ------Backtrace-------
+E, [2022-08-28T17:48:20.871029 #36192] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.1.0/lib/kitchen/shell_out.rb:70:in `rescue in run_command'
+E, [2022-08-28T17:48:20.871039 #36192] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.1.0/lib/kitchen/shell_out.rb:57:in `run_command'
+E, [2022-08-28T17:48:20.871049 #36192] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/kitchen-vagrant-1.10.0/lib/kitchen/driver/vagrant.rb:481:in `run_command'
+E, [2022-08-28T17:48:20.871060 #36192] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/kitchen-vagrant-1.10.0/lib/kitchen/driver/vagrant.rb:428:in `run'
+E, [2022-08-28T17:48:20.871071 #36192] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/kitchen-vagrant-1.10.0/lib/kitchen/driver/vagrant.rb:532:in `run_vagrant_up'
+E, [2022-08-28T17:48:20.871081 #36192] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/kitchen-vagrant-1.10.0/lib/kitchen/driver/vagrant.rb:117:in `create'
+E, [2022-08-28T17:48:20.871091 #36192] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.1.0/lib/kitchen/instance.rb:495:in `public_send'
+E, [2022-08-28T17:48:20.871101 #36192] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.1.0/lib/kitchen/instance.rb:495:in `block in perform_action'
+E, [2022-08-28T17:48:20.871112 #36192] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.1.0/lib/kitchen/instance.rb:560:in `block in synchronize_or_call'
+E, [2022-08-28T17:48:20.871123 #36192] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.1.0/lib/kitchen/instance.rb:558:in `synchronize'
+E, [2022-08-28T17:48:20.871135 #36192] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.1.0/lib/kitchen/instance.rb:558:in `synchronize_or_call'
+E, [2022-08-28T17:48:20.871145 #36192] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.1.0/lib/kitchen/instance.rb:524:in `block in action'
+E, [2022-08-28T17:48:20.871156 #36192] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/3.0.0/benchmark.rb:293:in `measure'
+E, [2022-08-28T17:48:20.871167 #36192] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.1.0/lib/kitchen/instance.rb:523:in `action'
+E, [2022-08-28T17:48:20.871201 #36192] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.1.0/lib/kitchen/instance.rb:495:in `perform_action'
+E, [2022-08-28T17:48:20.871229 #36192] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.1.0/lib/kitchen/instance.rb:404:in `create_action'
+E, [2022-08-28T17:48:20.871244 #36192] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.1.0/lib/kitchen/instance.rb:392:in `block (2 levels) in transition_to'
+E, [2022-08-28T17:48:20.871255 #36192] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.1.0/lib/kitchen/lifecycle_hooks.rb:47:in `run_with_hooks'
+E, [2022-08-28T17:48:20.871265 #36192] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.1.0/lib/kitchen/instance.rb:391:in `block in transition_to'
+E, [2022-08-28T17:48:20.871276 #36192] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.1.0/lib/kitchen/instance.rb:390:in `each'
+E, [2022-08-28T17:48:20.871288 #36192] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.1.0/lib/kitchen/instance.rb:390:in `transition_to'
+E, [2022-08-28T17:48:20.871298 #36192] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.1.0/lib/kitchen/instance.rb:128:in `create'
+E, [2022-08-28T17:48:20.871308 #36192] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.1.0/lib/kitchen/command.rb:195:in `public_send'
+E, [2022-08-28T17:48:20.871318 #36192] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.1.0/lib/kitchen/command.rb:195:in `run_action_in_thread'
+E, [2022-08-28T17:48:20.871330 #36192] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.1.0/lib/kitchen/command.rb:166:in `block (2 levels) in run_action'
+E, [2022-08-28T17:48:20.871341 #36192] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/logging-2.3.0/lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+E, [2022-08-28T17:48:20.871351 #36192] ERROR -- default-centos-7: ----End Backtrace-----
+E, [2022-08-28T17:48:20.871361 #36192] ERROR -- default-centos-7: ---Nested Exception---
+E, [2022-08-28T17:48:20.871371 #36192] ERROR -- default-centos-7: Class: Mixlib::ShellOut::ShellCommandFailed
+E, [2022-08-28T17:48:20.871381 #36192] ERROR -- default-centos-7: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider virtualbox ----
+STDOUT: 
+STDERR: /usr/share/rubygems-integration/all/gems/vagrant-2.2.19/plugins/kernel_v2/config/vm.rb:319:in `network': wrong number of arguments (given 2, expected 1) (ArgumentError)
+	from /home/mli/chef-repo/.kitchen/kitchen-vagrant/default-centos-7/Vagrantfile:5:in `block in <top (required)>'
+	from /usr/share/rubygems-integration/all/gems/vagrant-2.2.19/lib/vagrant/config/v2/loader.rb:37:in `load'
+	from /usr/share/rubygems-integration/all/gems/vagrant-2.2.19/lib/vagrant/config/loader.rb:126:in `block (2 levels) in load'
+	from /usr/share/rubygems-integration/all/gems/vagrant-2.2.19/lib/vagrant/config/loader.rb:119:in `each'
+	from /usr/share/rubygems-integration/all/gems/vagrant-2.2.19/lib/vagrant/config/loader.rb:119:in `block in load'
+	from /usr/share/rubygems-integration/all/gems/vagrant-2.2.19/lib/vagrant/config/loader.rb:116:in `each'
+	from /usr/share/rubygems-integration/all/gems/vagrant-2.2.19/lib/vagrant/config/loader.rb:116:in `load'
+	from /usr/share/rubygems-integration/all/gems/vagrant-2.2.19/lib/vagrant/vagrantfile.rb:29:in `initialize'
+	from /usr/share/rubygems-integration/all/gems/vagrant-2.2.19/lib/vagrant/environment.rb:793:in `new'
+	from /usr/share/rubygems-integration/all/gems/vagrant-2.2.19/lib/vagrant/environment.rb:793:in `vagrantfile'
+	from /usr/share/rubygems-integration/all/gems/vagrant-2.2.19/lib/vagrant/environment.rb:974:in `process_configured_plugins'
+	from /usr/share/rubygems-integration/all/gems/vagrant-2.2.19/lib/vagrant/environment.rb:178:in `initialize'
+	from /usr/share/rubygems-integration/all/gems/vagrant-2.2.19/bin/vagrant:194:in `new'
+	from /usr/share/rubygems-integration/all/gems/vagrant-2.2.19/bin/vagrant:194:in `<top (required)>'
+	from /usr/bin/vagrant:25:in `load'
+	from /usr/bin/vagrant:25:in `<main>'
+---- End output of vagrant up --no-provision --provider virtualbox ----
+Ran vagrant up --no-provision --provider virtualbox returned 1
+E, [2022-08-28T17:48:20.871400 #36192] ERROR -- default-centos-7: ----------------------
+E, [2022-08-28T17:48:20.871411 #36192] ERROR -- default-centos-7: ------Backtrace-------
+E, [2022-08-28T17:48:20.871421 #36192] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.1.0/lib/kitchen/shell_out.rb:70:in `rescue in run_command'
+E, [2022-08-28T17:48:20.871431 #36192] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.1.0/lib/kitchen/shell_out.rb:57:in `run_command'
+E, [2022-08-28T17:48:20.871441 #36192] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/kitchen-vagrant-1.10.0/lib/kitchen/driver/vagrant.rb:481:in `run_command'
+E, [2022-08-28T17:48:20.871451 #36192] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/kitchen-vagrant-1.10.0/lib/kitchen/driver/vagrant.rb:428:in `run'
+E, [2022-08-28T17:48:20.871463 #36192] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/kitchen-vagrant-1.10.0/lib/kitchen/driver/vagrant.rb:532:in `run_vagrant_up'
+E, [2022-08-28T17:48:20.871473 #36192] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/kitchen-vagrant-1.10.0/lib/kitchen/driver/vagrant.rb:117:in `create'
+E, [2022-08-28T17:48:20.871485 #36192] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.1.0/lib/kitchen/instance.rb:495:in `public_send'
+E, [2022-08-28T17:48:20.871495 #36192] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.1.0/lib/kitchen/instance.rb:495:in `block in perform_action'
+E, [2022-08-28T17:48:20.871504 #36192] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.1.0/lib/kitchen/instance.rb:560:in `block in synchronize_or_call'
+E, [2022-08-28T17:48:20.871514 #36192] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.1.0/lib/kitchen/instance.rb:558:in `synchronize'
+E, [2022-08-28T17:48:20.871524 #36192] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.1.0/lib/kitchen/instance.rb:558:in `synchronize_or_call'
+E, [2022-08-28T17:48:20.871534 #36192] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.1.0/lib/kitchen/instance.rb:524:in `block in action'
+E, [2022-08-28T17:48:20.871544 #36192] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/3.0.0/benchmark.rb:293:in `measure'
+E, [2022-08-28T17:48:20.871556 #36192] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.1.0/lib/kitchen/instance.rb:523:in `action'
+E, [2022-08-28T17:48:20.871567 #36192] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.1.0/lib/kitchen/instance.rb:495:in `perform_action'
+E, [2022-08-28T17:48:20.871577 #36192] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.1.0/lib/kitchen/instance.rb:404:in `create_action'
+E, [2022-08-28T17:48:20.871590 #36192] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.1.0/lib/kitchen/instance.rb:392:in `block (2 levels) in transition_to'
+E, [2022-08-28T17:48:20.871601 #36192] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.1.0/lib/kitchen/lifecycle_hooks.rb:47:in `run_with_hooks'
+E, [2022-08-28T17:48:20.871619 #36192] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.1.0/lib/kitchen/instance.rb:391:in `block in transition_to'
+E, [2022-08-28T17:48:20.871631 #36192] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.1.0/lib/kitchen/instance.rb:390:in `each'
+E, [2022-08-28T17:48:20.871641 #36192] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.1.0/lib/kitchen/instance.rb:390:in `transition_to'
+E, [2022-08-28T17:48:20.871652 #36192] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.1.0/lib/kitchen/instance.rb:128:in `create'
+E, [2022-08-28T17:48:20.871662 #36192] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.1.0/lib/kitchen/command.rb:195:in `public_send'
+E, [2022-08-28T17:48:20.871673 #36192] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.1.0/lib/kitchen/command.rb:195:in `run_action_in_thread'
+E, [2022-08-28T17:48:20.871683 #36192] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/test-kitchen-3.1.0/lib/kitchen/command.rb:166:in `block (2 levels) in run_action'
+E, [2022-08-28T17:48:20.871695 #36192] ERROR -- default-centos-7: /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/logging-2.3.0/lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+E, [2022-08-28T17:48:20.871706 #36192] ERROR -- default-centos-7: ----End Backtrace-----

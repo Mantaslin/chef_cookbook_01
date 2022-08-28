@@ -1,13 +1,13 @@
 Vagrant.configure("2") do |c|
   c.berkshelf.enabled = false if Vagrant.has_plugin?("vagrant-berkshelf")
   c.vm.box = "bento/centos-7"
-  c.vm.hostname = "default-centos-7.vagrantup.com"
+  c.vm.hostname = "master-quest"
   c.vm.network(:forwarded_port, {:guest=>3000, :host=>3000})
-  c.vm.network(:private_network, {:ip=>"33.33.33.10"})
+  c.vm.network(:private_network, {:ip=>"192.168.56.10"})
   c.vm.synced_folder ".", "/vagrant", disabled: true
   c.vm.synced_folder "/home/mli/.kitchen/cache", "/tmp/omnibus/cache", create: true
   c.vm.provider :virtualbox do |p|
-    p.name = "kitchen-chef-repo-default-centos-7-50e5a219-4c44-44da-a33c-3e4de086cbb3"
+    p.name = "kitchen-chef-repo-sre-homework-centos-7-a13ec7e2-91b6-4ea1-8e35-a0151a92bd3c"
     p.customize ["modifyvm", :id, "--audio", "none"]
     p.customize ["modifyvm", :id, "--memory", "2048"]
     p.customize ["modifyvm", :id, "--cpus", "2"]

@@ -1,0 +1,3 @@
+I, [2022-08-28T18:18:33.264901 #43866]  INFO -- sre-homework-centos-7: -----> Verifying <sre-homework-centos-7>...
+I, [2022-08-28T18:18:35.500031 #43866]  INFO -- sre-homework-centos-7: Loaded tests from {:path=>".home.mli.chef-repo.test.integration.default"} 
+I, [2022-08-28T18:18:36.212068 #43866]  INFO -- sre-homework-centos-7: Finished verifying <sre-homework-centos-7> (0m2.95s).
