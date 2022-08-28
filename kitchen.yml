@@ -1,0 +1,26 @@
+---
+driver:
+  name: vagrant
+  product_name: chef
+  customize:
+    cpus: 2
+    memory: 1024
+
+provisioner:
+  name: chef_zero
+  product_name: chef
+
+verifier:
+  name: inspec
+
+platforms:
+  - name: centos-7
+
+suites:
+  - name: default
+    run_list:
+      - recipe[sre_homework::default]
+    verifier:
+      inspec_tests:
+        - test/integration/default
+    attributes:
