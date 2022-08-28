@@ -4,9 +4,9 @@
 #
 # Copyright:: 2022, The Authors, All Rights Reserved.
 
-#include_recipe 'sre_homework::create-file.rb'
-#include_recipe 'sre_homework::docker-server'
-#include_recipe 'selinux::disabled'
+# include_recipe 'sre_homework::create-file.rb'
+# include_recipe 'sre_homework::docker-server'
+# include_recipe 'selinux::disabled'
 template '/etc/selinux/config' do
   source 'config.erb'
   owner 'root'

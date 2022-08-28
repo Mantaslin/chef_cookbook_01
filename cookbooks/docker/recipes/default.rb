@@ -2,7 +2,7 @@ docker_service 'default' do
   action [:create, :start]
 end
 
-#Pull latest prometheus image
+# Pull latest prometheus image
 docker_image 'bitnami/prometheus' do
   tag 'latest'
   action :pull
@@ -16,7 +16,7 @@ docker_container 'prometheus' do
   port '9090:9090'
 end
 
-#Pull latest node-exporter image
+# Pull latest node-exporter image
 docker_image 'bitnami/node-exporter' do
   tag 'latest'
   action :pull
@@ -31,7 +31,7 @@ docker_container 'node-exporter' do
   command '--path.rootfs=/host'
 end
 
-#Pull latest grafana image
+# Pull latest grafana image
 docker_image 'grafana/grafana' do
   tag 'latest'
   action :pull
@@ -43,4 +43,3 @@ docker_container 'grafana' do
   port '3000:3000'
   volume '/etc/grafana/provisioning:/etc/grafana/provisioning'
 end
-

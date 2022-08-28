@@ -12,22 +12,23 @@ Lint/UnusedBlockArgument:
   Enabled: false
 
 # Offense count: 2
-Style/LineLength:
+Layout/LineLength:
   Max: 94
 
 # Offense count: 5
 # Cop supports --auto-correct.
-Style/SingleSpaceBeforeFirstArg:
+# Style/SingleSpaceBeforeFirstArg:
+Layout/SpaceBeforeFirstArg:
   Enabled: false
 
 # Offense count: 2
 # Cop supports --auto-correct.
-Style/SpaceAfterComma:
+Layout/SpaceAfterComma:
   Enabled: false
 
 # Offense count: 1
 # Cop supports --auto-correct.
-Style/TrailingWhitespace:
+Layout/TrailingWhitespace:
   Enabled: false
 
 # Offense count: 1

@@ -1,6 +1,6 @@
 name 'sre_homework'
-maintainer 'The Authors'
-maintainer_email 'you@example.com'
+maintainer 'Mantas'
+maintainer_email 'manas.lingys@vinted.com'
 license 'All Rights Reserved'
 description 'Installs/Configures sre_homework'
 version '0.1.0'
@@ -18,6 +18,6 @@ chef_version '>= 16.0'
 #
 # source_url 'https://github.com/<insert_org_here>/sre_homework'
 
-#depends 'selinux'
+# depends 'selinux'
 depends 'docker'
 depends 'cadvisor'
